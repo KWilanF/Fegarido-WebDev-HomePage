@@ -1,4 +1,6 @@
 import React from 'react';
+import heroImage from '../assets/img.jpg';
+
 
 const Home = () => {
   return (
@@ -28,11 +30,13 @@ const Home = () => {
             </div>
           </div>
           
-          {/* Image Placeholder - Replace with actual hero image */}
+          {/* Hero Image */}
           <div className="lg:w-1/2">
-            <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl h-80 md:h-96 w-full flex items-center justify-center text-gray-500 font-semibold">
-              Hero Image - CubeTech Solutions
-            </div>
+            <img 
+              src={heroImage}
+              alt="CubeTech Solutions"
+              className="rounded-xl h-80 md:h-96 w-full object-cover shadow-lg"
+            />
           </div>
         </div>
       </section>
@@ -75,11 +79,9 @@ const Home = () => {
               </button>
             </div>
             
-            {/* Image Placeholder - Replace with actual product image */}
+            {/* Product Image */}
             <div className="lg:w-1/2">
-              <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl h-80 w-full flex items-center justify-center text-gray-500 font-semibold">
-                SnapServe Product Image
-              </div>
+              
             </div>
           </div>
           
@@ -127,35 +129,30 @@ const Home = () => {
         <div>
           <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Our Team</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Team Member 1 */}
             <div className="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition duration-300">
-              {/* Image Placeholder - Replace with actual team member photo */}
-              <div className="w-32 h-32 mx-auto mb-6 bg-gray-100 border-2 border-dashed border-gray-300 rounded-full flex items-center justify-center text-gray-500 font-semibold">
-                Sadik Rahman
-              </div>
+             
               <h4 className="text-xl font-bold text-gray-900 mb-2">Sadik Rahman</h4>
               <p className="text-blue-600 font-semibold">DIRECTOR</p>
             </div>
             
+            {/* Team Member 2 */}
             <div className="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition duration-300">
-              <div className="w-32 h-32 mx-auto mb-6 bg-gray-100 border-2 border-dashed border-gray-300 rounded-full flex items-center justify-center text-gray-500 font-semibold">
-                Cherry White
-              </div>
+              
               <h4 className="text-xl font-bold text-gray-900 mb-2">Cherry White</h4>
               <p className="text-blue-600 font-semibold">SALES AND MARKETING</p>
             </div>
             
+            {/* Team Member 3 */}
             <div className="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition duration-300">
-              <div className="w-32 h-32 mx-auto mb-6 bg-gray-100 border-2 border-dashed border-gray-300 rounded-full flex items-center justify-center text-gray-500 font-semibold">
-                Angeline Yap
-              </div>
+              
               <h4 className="text-xl font-bold text-gray-900 mb-2">Angeline Yap</h4>
               <p className="text-blue-600 font-semibold">FINANCE MANAGER</p>
             </div>
             
+            {/* Team Member 4 */}
             <div className="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition duration-300">
-              <div className="w-32 h-32 mx-auto mb-6 bg-gray-100 border-2 border-dashed border-gray-300 rounded-full flex items-center justify-center text-gray-500 font-semibold">
-                Denver Son
-              </div>
+              
               <h4 className="text-xl font-bold text-gray-900 mb-2">Denver Son</h4>
               <p className="text-blue-600 font-semibold">FULL-STACK DEVELOPER</p>
             </div>
