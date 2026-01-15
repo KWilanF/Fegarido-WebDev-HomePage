@@ -39,7 +39,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
+    <header className="sticky top-0 z-50 w-full  bg-white backdrop-blur-md border-b border-gray-100 shadow-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           
@@ -52,9 +52,9 @@ const Header = () => {
             />
             <div>
               <h1 className="text-1xl font-bold bg-gradient-to-r from-blue-600 to-blue-600 bg-clip-text text-transparent">
-                CubeTech
+                CubeTech Innovations
               </h1>
-              <p className="text-1xl font-bold bg-gradient-to-r from-blue-600 to-blue-600 bg-clip-text text-transparent">Innovations</p>
+             
             </div>
           </div>
 

@@ -2,44 +2,56 @@ import React from 'react';
 import heroImage from '../assets/img.jpg';
 
 
+
 const Home = () => {
   return (
     <div className="min-h-screen bg-white">
-      {/* Section 1: Hero Section */}
-      <section className="py-16 md:py-24 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-          <div className="lg:w-1/2">
-            <div className="mb-8">
-              <div className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold text-xl inline-block">
-                CubeTech Innovations
-              </div>
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Shaping Tomorrow's Digital Solutions Today
-            </h1>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              CubeTech Innovations is a technology company focused on creating cutting-edge solutions that drive progress and transform ideas into reality. We provide scalable, efficient solutions to help businesses stay ahead in a rapidly evolving digital landscape.
-            </p>
-            <div className="flex flex-wrap gap-4 mt-10">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition duration-300">
-                CONTACT US
-              </button>
-              <button className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold px-6 py-3 rounded-lg transition duration-300">
-                READ MORE
-              </button>
-            </div>
-          </div>
-          
-          {/* Hero Image */}
-          <div className="lg:w-1/2">
-            <img 
-              src={heroImage}
-              alt="CubeTech Solutions"
-              className="rounded-xl h-80 md:h-96 w-full object-cover shadow-lg"
-            />
-          </div>
-        </div>
-      </section>
+  <section className="min-h-screen flex items-start bg-gradient-to-br from-gray-50 to-white">
+  <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full flex flex-col lg:flex-row items-start justify-between">
+    
+    {/* Left Container - All text content */}
+    <div className="lg:w-1/2 flex flex-col justify-center">
+  {/* Container for all text content */}
+  <div className="max-w-lg  p-8 mt-50 bg-white/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm">
+    <h1 className="text-2xl lg:text-2xl font-bold text-gray-900 mb-4 leading-tight">
+      CubeTech Innovations
+    </h1>
+    
+    <h2 className="text-xl lg:text-1xl text-sky-500 mb-6 font-medium">
+      Shaping Tomorrow's Digital Solutions Today
+    </h2>
+    
+    <div className="mb-8">
+      <p className="text-base lg:text-lg text-gray-600 mb-4 leading-relaxed">
+        CubeTech Innovations is a technology company focused on creating cutting-edge solutions that drive progress and transform ideas into reality.
+      </p>
+      <p className="text-base lg:text-lg text-gray-600 leading-relaxed">
+        We provide scalable, efficient solutions to help businesses stay ahead in a rapidly evolving digital landscape.
+      </p>
+    </div>
+    
+    {/* Button Container - matches screenshot spacing */}
+    <div className="flex flex-col sm:flex-row gap-4">
+      <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition duration-300 text-base shadow-md hover:shadow-lg">
+        CONTACT US
+      </button>
+      <button className="border border-gray-800 text-gray-800 hover:bg-gray-50 font-semibold px-6 py-3 rounded-lg transition duration-300 text-base">
+        READ MORE
+      </button>
+    </div>
+  </div>
+</div>
+    
+    {/* Right Container - Image only */}
+    <div className="lg:w-1/2">
+      <img 
+        src={heroImage}
+        alt="CubeTech Digital Solutions"
+        className="w-full h-[500px] lg:h-[600px] object-cover rounded-bl-[40px] lg:rounded-bl-[80px]"
+      />
+    </div>  
+  </div>
+</section>
 
       {/* Section 2: Stats & SnapServe Product */}
       <section className="py-16 md:py-24 bg-gray-50 rounded-3xl my-10">
