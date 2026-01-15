@@ -5,14 +5,14 @@ import heroImage from '../assets/img.jpg';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div>
   <section className="min-h-screen flex items-start bg-gradient-to-br from-gray-50 to-white">
   <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full flex flex-col lg:flex-row items-start justify-between">
     
     {/* Left Container - All text content */}
-    <div className="lg:w-1/2 flex flex-col justify-center">
+    <div className="lg:w-1/2 flex flex-col justify-center py-15 lg:py-20">
   {/* Container for all text content */}
-  <div className="max-w-lg  p-8 mt-50 bg-white/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm">
+  <div className="w-200 p-8 bg-white/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-xl h-auto mr-8 my-10">
     <h1 className="text-2xl lg:text-2xl font-bold text-gray-900 mb-4 leading-tight">
       CubeTech Innovations
     </h1>
@@ -22,12 +22,11 @@ const Home = () => {
     </h2>
     
     <div className="mb-8">
-      <p className="text-base lg:text-lg text-gray-600 mb-4 leading-relaxed">
-        CubeTech Innovations is a technology company focused on creating cutting-edge solutions that drive progress and transform ideas into reality.
+      <p className="text-base lg:text-sm text-gray-600 mb-4 leading-relaxed">
+        CubeTech Innovations is a technology company focused on creating cutting-edge solutions that drive progress and transform ideas into reality.We provide scalable, efficient solutions to help businesses stay ahead in a rapidly evolving digital landscape.
+        
       </p>
-      <p className="text-base lg:text-lg text-gray-600 leading-relaxed">
-        We provide scalable, efficient solutions to help businesses stay ahead in a rapidly evolving digital landscape.
-      </p>
+
     </div>
     
     {/* Button Container - matches screenshot spacing */}
