@@ -101,7 +101,7 @@ const Header = () => {
                         href={subItem.href}
                         className="flex items-center px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-colors group"
                       >
-                        <div className="w-2 h-2 bg-blue-500 rounded-full mr-3 group-hover:scale-125 transition-transform"></div>
+                       
                         {subItem.name}
                       </a>
                     ))}
@@ -123,7 +123,7 @@ const Header = () => {
                         href={subItem.href}
                         className="flex items-center px-4 py-3 text-gray-700 hover:text-green-600 hover:bg-green-50 transition-colors group"
                       >
-                        <div className="w-2 h-2 bg-green-500 rounded-full mr-3 group-hover:scale-125 transition-transform"></div>
+                        
                         {subItem.name}
                       </a>
                     ))}

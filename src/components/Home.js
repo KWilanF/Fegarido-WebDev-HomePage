@@ -10,38 +10,62 @@ const Home = () => {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
             
             {/* Left Container - Text Content */}
-            <div className="w-full lg:w-1/2 order-2 lg:order-1">
-              <div className="w-full bg-white/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-xl p-6 sm:p-8 md:p-10 my-8 lg:my-10">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                  CubeTech Innovations
-                </h1>
-                
-                <h2 className="text-xl sm:text-2xl md:text-3xl text-sky-500 mb-6 font-medium">
-                  Shaping Tomorrow's Digital Solutions Today
-                </h2>
-                
-                <div className="mb-8">
-                  <p className="text-base sm:text-lg text-gray-600 mb-4 leading-relaxed">
-                    CubeTech Innovations is a technology company focused on creating cutting-edge solutions that drive progress and transform ideas into reality. We provide scalable, efficient solutions to help businesses stay ahead in a rapidly evolving digital landscape.
-                  </p>
-                </div>
-                
-                {/* Button Container */}
-                <div className="flex flex-col sm:flex-row gap-4">
-                 <button className="bg-gradient-to-b from-sky-500 to-blue-500 hover:from-sky-600 hover:via-blue-600 hover:to-indigo-600 text-white font-semibold px-6 py-3 rounded-lg 
-  transition-all duration-500 ease-out text-base shadow-lg hover:shadow-2xl
-  w-full sm:w-auto hover:-translate-y-1
-  transform
-">
-  CONTACT US
-</button>
-                  <button className="border border-gray-800 text-gray-800 hover:bg-gray-50 font-semibold px-6 py-3 rounded-lg transition duration-300 text-base w-full sm:w-auto hover:-translate-y-1
-  transform">
-                    READ MORE
-                  </button>
-                </div>
-              </div>
-            </div>
+      <div className="w-full lg:w-1/2 order-2 lg:order-1">
+  <div className="w-full bg-white/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-xl 
+    p-5 sm:p-6 md:p-6 lg:p-8  /* Even smaller padding */
+    my-6 lg:my-8 
+    min-h-[280px] sm:min-h-16
+    max-w-full lg:max-w-md xl:max-w-lg  /* Much narrower on desktop */
+    mx-auto lg:mx-0
+    lg:ml-8  /* Add some left margin on desktop */
+  ">
+    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-bold text-gray-900 mb-2 lg:mb-3 leading-tight">
+      CubeTech Innovations
+    </h1>
+    
+    <h2 className="text-lg sm:text-xl md:text-2xl lg:text-lg xl:text-xl text-sky-500 mb-3 lg:mb-4 font-medium">
+      Shaping Tomorrow's Digital Solutions Today
+    </h2>
+    
+    <div className="mb-4 lg:mb-5">
+      <p className="text-sm sm:text-base lg:text-sm xl:text-base text-gray-600 mb-2 lg:mb-3 leading-relaxed">
+        CubeTech Innovations is a technology company focused on creating cutting-edge solutions that drive progress and transform ideas into reality. We provide scalable, efficient solutions to help businesses stay ahead in a rapidly evolving digital landscape.
+      </p>
+      
+    </div>
+    
+    {/* Button Container - even tighter */}
+    <div className="flex flex-col sm:flex-row gap-2 lg:gap-3">
+      <button className="
+        bg-gradient-to-b from-sky-500 to-blue-500 
+        hover:from-sky-600 hover:to-blue-600
+        text-white font-semibold 
+        px-4 lg:px-5 py-2 lg:py-2.5 
+        rounded-lg 
+        transition-all duration-300 
+        text-xs lg:text-sm 
+        shadow-md hover:shadow-lg hover:-translate-y-0.5
+        w-full sm:w-auto
+      ">
+        CONTACT US
+      </button>
+      
+      <button className="
+        border border-gray-800 
+        text-gray-800 hover:bg-gray-50 
+        font-semibold 
+        px-4 lg:px-5 py-2 lg:py-2.5 
+        rounded-lg 
+        transition-all duration-300 
+        text-xs lg:text-sm 
+        w-full sm:w-auto
+        hover:-translate-y-0.5
+      ">
+        READ MORE
+      </button>
+    </div>
+  </div>
+</div>
             
             {/* Right Container - Image */}
             <div className="w-full lg:w-1/2 order-1 lg:order-2">
@@ -55,76 +79,94 @@ const Home = () => {
         </div>
       </section>
 
+
+
       {/* Section 2: Stats & SnapServe Product */}
-      <section className="py-12 sm:py-16 md:py-24 bg-gray-50 rounded-3xl my-8 sm:my-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-          {/* Stats Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-20">
-            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md text-center">
-              <h3 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2 sm:mb-3">100+</h3>
-              <p className="text-sm sm:text-base text-gray-600">Skilled software experts ready to innovate</p>
-            </div>
-            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md text-center">
-              <h3 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2 sm:mb-3">100+</h3>
-              <p className="text-sm sm:text-base text-gray-600">Successful projects delivered across multiple industries</p>
-            </div>
-            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md text-center">
-              <h3 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2 sm:mb-3">100+</h3>
-              <p className="text-sm sm:text-base text-gray-600">Trusted clients gaining value from proven expertise</p>
-            </div>
-            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md text-center">
-              <h3 className="text-2xl sm:text-3xl font-bold text-blue-600 mb-2 sm:mb-3">under 5%</h3>
-              <p className="text-sm sm:text-base text-gray-600">Developer turnover rate consistently upheld</p>
-            </div>
+     <section className="py-12 sm:py-16 md:py-24 bg-gray-50 rounded-3xl my-8 sm:my-10">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+    {/* Stats Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-20">
+      <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md text-center">
+        <h3 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2 sm:mb-3">100+</h3>
+        <p className="text-sm sm:text-base text-gray-600">Skilled software experts ready to innovate</p>
+      </div>
+      <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md text-center">
+        <h3 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2 sm:mb-3">100+</h3>
+        <p className="text-sm sm:text-base text-gray-600">Successful projects delivered across multiple industries</p>
+      </div>
+      <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md text-center">
+        <h3 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2 sm:mb-3">100+</h3>
+        <p className="text-sm sm:text-base text-gray-600">Trusted clients gaining value from proven expertise</p>
+      </div>
+      <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md text-center">
+        <h3 className="text-2xl sm:text-3xl font-bold text-blue-600 mb-2 sm:mb-3">under 5%</h3>
+        <p className="text-sm sm:text-base text-gray-600">Developer turnover rate consistently upheld</p>
+      </div>
+    </div>
+    
+    {/* SnapServe Product - Image on right */}
+    <div className="flex flex-col lg:flex-row items-center gap-8 sm:gap-12 mb-12 sm:mb-16">
+      <div className="w-full lg:w-1/2">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
+          Discovering "SnapServe" Taking Your Restaurant Online in Minutes
+        </h2>
+        <p className="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
+          Eliminate the hassle of reprinting menus, reduce order errors, and speed up kitchen operations. With SnapServe QR code menu, easily integrate a seamless online ordering system into your restaurant, offering faster and more enjoyable dining experience for your customers.
+        </p>
+        <p className="font-semibold text-gray-800 mb-6 sm:mb-8 text-sm sm:text-base">
+          Streamline dining with SnapServe—reduce waste and business.
+        </p>
+        <button className="bg-gradient-to-b from-sky-500 to-blue-500 hover:from-sky-600 hover:via-blue-600 hover:to-indigo-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-500 ease-out text-base shadow-lg hover:shadow-2xl w-full sm:w-auto hover:-translate-y-1 transform">
+          Request a Demo
+        </button>
+      </div>
+      
+      {/* First Image */}
+      <div className="w-full lg:w-1/2">
+        <img 
+          src={require('../assets/img.jpg')} 
+          alt="SnapServe QR Code Menu System"
+          className="w-full h-[300px] sm:h-[350px] md:h-[400px] object-cover rounded-xl shadow-lg"
+        />
+      </div>
+    </div>
+    
+    {/* Subscription Info - Image on left */}
+    <div className="flex flex-col lg:flex-row items-center gap-8 sm:gap-12 mb-12">
+      {/* Second Image - appears on left on desktop, top on mobile */}
+      <div className="w-full lg:w-1/2 order-2 lg:order-1">
+        <img 
+          src={require('../assets/img.jpg')} 
+          alt="SnapServe Subscription Service"
+          className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-xl shadow-lg"
+        />
+      </div>
+      
+      {/* Text content on right */}
+      <div className="w-full lg:w-1/2 order-1 lg:order-2">
+        <div className="bg-white p-6 sm:p-8 md:p-10 rounded-xl shadow-md">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
+            SnapServe offers a powerful subscription service with a range of options tailored to meet your needs!
+          </h3>
+          <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
+            <p className="text-gray-600 text-sm sm:text-base">
+              Our basic subscription includes one menu and ordering service, allowing you to access essential features at an affordable price. You can utilize the basic plan without any obligation to upgrade, and your QR code will remain active at all times.
+            </p>
+            <p className="text-gray-600 text-sm sm:text-base">
+              With our service, you can receive unlimited dine-in, delivery, and takeaway orders under this plan.
+            </p>
           </div>
-          
-          {/* SnapServe Product */}
-          <div className="flex flex-col lg:flex-row items-center gap-8 sm:gap-12 mb-12 sm:mb-16">
-            <div className="w-full lg:w-1/2">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
-                Discovering "SnapServe" Taking Your Restaurant Online in Minutes
-              </h2>
-              <p className="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
-                Eliminate the hassle of reprinting menus, reduce order errors, and speed up kitchen operations. With SnapServe QR code menu, easily integrate a seamless online ordering system into your restaurant, offering faster and more enjoyable dining experience for your customers.
-              </p>
-              <p className="font-semibold text-gray-800 mb-6 sm:mb-8 text-sm sm:text-base">
-                Streamline dining with SnapServe—reduce waste and business.
-              </p>
-              <button className="bg-gradient-to-b from-sky-500 to-blue-500 hover:from-sky-600 hover:via-blue-600 hover:to-indigo-600 text-white font-semibold px-6 py-3 rounded-lg 
-  transition-all duration-500 ease-out text-base shadow-lg hover:shadow-2xl
-  w-full sm:w-auto hover:-translate-y-1
-  transform">
-                Request a Demo
-              </button>
-            </div>
-            
-            {/* Product Image Placeholder */}
-            <div className="w-full lg:w-1/2">
-              <div className="bg-gray-200 h-[300px] sm:h-[400px] rounded-xl flex items-center justify-center">
-                <span className="text-gray-500">Product Image</span>
-              </div>
-            </div>
-          </div>
-          
-          {/* Subscription Info */}
-          <div className="bg-white p-6 sm:p-8 md:p-12 rounded-xl shadow-md">
-            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
-              SnapServe offers a powerful subscription service with a range of options tailored to meet your needs!
-            </h3>
-            <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
-              <p className="text-gray-600 text-sm sm:text-base">
-                Our basic subscription includes one menu and ordering service, allowing you to access essential features at an affordable price. You can utilize the basic plan without any obligation to upgrade, and your QR code will remain active at all times.
-              </p>
-              <p className="text-gray-600 text-sm sm:text-base">
-                With our service, you can receive unlimited dine-in, delivery, and takeaway orders under this plan.
-              </p>
-            </div>
-            <button className="text-blue-600 font-semibold hover:text-blue-800 hover:underline transition duration-300 text-sm sm:text-base">
-              More about our products →
-            </button>
-          </div>
+          <button className="text-blue-600 font-semibold hover:text-blue-800 hover:underline transition duration-300 text-sm sm:text-base flex items-center gap-2">
+            More about our products 
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </button>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Section 3: About CubeTech & Team */}
       <section className="py-12 sm:py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
