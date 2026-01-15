@@ -133,7 +133,7 @@ const Header = () => {
             ))}
             
             <div className="ml-4">
-              <button className="px-6 py-2.5 bg-gradient-to-b from-sky-400 to-sky-500 text-white rounded-lg text-sm font-medium hover:shadow-lg hover:scale-[1.02] transition-all">
+              <button className="px-6 py-2.5 bg-gradient-to-b from-sky-500 to-blue-500 hover:from-sky-600 hover:via-blue-600 hover:to-indigo-600 text-white rounded-lg text-sm font-medium hover:shadow-lg hover:scale-[1.02] transition-all">
                 Contact Us
               </button>
             </div>
