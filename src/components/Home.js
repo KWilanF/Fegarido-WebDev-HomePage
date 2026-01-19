@@ -200,76 +200,76 @@ const Home = () => {
     </div>
     
     {/* Team Section */}
-    <div>
-      <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-8 sm:mb-12">
-        Our Team
-      </h3>
-      
-      {/* Team Grid - 4 cards in a row on desktop */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-        
-        {/* Team Member 1 */}
-        <div className="bg-gray-200 rounded-lg shadow-sm hover:shadow-md transition duration-300 overflow-hidden border border-gray-100">
-           <div className="w-full h-56 sm:h-60 md:h-64">
-            <img 
-              src={require('../assets/team1.png')} 
-              alt="Angeline Yap" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="p-5 sm:p-6">
-            <h4 className="text-xl font-bold text-gray-900 mb-2">Denver Son</h4>
-            <p className="text-blue-600 font-semibold text-sm">FULL-STACK DEVELOPER</p>
-          </div>
-        </div>
-        
-        {/* Team Member 2 */}
-       <div className="bg-gray-200 rounded-lg shadow-sm hover:shadow-md transition duration-300 overflow-hidden border border-gray-100">
-           <div className="w-full h-56 sm:h-60 md:h-64">
-            <img 
-              src={require('../assets/team2.png')} 
-              alt="Angeline Yap" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="p-5 sm:p-6">
-            <h4 className="text-xl font-bold text-gray-900 mb-2">Denver Son</h4>
-            <p className="text-blue-600 font-semibold text-sm">FULL-STACK DEVELOPER</p>
-          </div>
-        </div>
-        
-        {/* Team Member 3 */}
-        <div className="bg-gray-200 rounded-lg shadow-sm hover:shadow-md transition duration-300 overflow-hidden border border-gray-100">
-           <div className="w-full h-56 sm:h-60 md:h-64">
-            <img 
-              src={require('../assets/team2.png')} 
-              alt="Angeline Yap" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="p-5 sm:p-6">
-            <h4 className="text-xl font-bold text-gray-900 mb-2">Denver Son</h4>
-            <p className="text-blue-600 font-semibold text-sm">FULL-STACK DEVELOPER</p>
-          </div>
-        </div>
-        
-        {/* Team Member 4 */}
-        <div className="bg-gray-200 rounded-lg shadow-sm hover:shadow-md transition duration-300 overflow-hidden border border-gray-100">
-           <div className="w-full h-56 sm:h-60 md:h-64">
-            <img 
-              src={require('../assets/team1.png')} 
-              alt="Angeline Yap" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="p-5 sm:p-6">
-            <h4 className="text-xl font-bold text-gray-900 mb-2">Denver Son</h4>
-            <p className="text-blue-600 font-semibold text-sm">FULL-STACK DEVELOPER</p>
-          </div>
-        </div>
-        
+   <div className="px-4 sm:px-6 lg:px-8">
+  <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-8 sm:mb-12">
+    Our Team
+  </h3>
+  
+  {/* Team Grid - Always 2 per row on mobile, 4 on desktop */}
+  <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+    
+    {/* Team Member 1 */}
+    <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
+      <div className="w-full h-48 sm:h-52 md:h-56">
+        <img 
+          src={require('../assets/team1.png')} 
+          alt="Denver Son" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="p-4 sm:p-5">
+        <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Denver Son</h4>
+        <p className="text-blue-600 font-semibold text-xs sm:text-sm">FULL-STACK DEVELOPER</p>
       </div>
     </div>
+    
+    {/* Team Member 2 */}
+    <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
+      <div className="w-full h-48 sm:h-52 md:h-56">
+        <img 
+          src={require('../assets/team2.png')} 
+          alt="Team Member" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="p-4 sm:p-5">
+        <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Team Member</h4>
+        <p className="text-blue-600 font-semibold text-xs sm:text-sm">FULL-STACK DEVELOPER</p>
+      </div>
+    </div>
+    
+    {/* Team Member 3 */}
+    <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
+      <div className="w-full h-48 sm:h-52 md:h-56">
+        <img 
+          src={require('../assets/team2.png')} 
+          alt="Team Member" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="p-4 sm:p-5">
+        <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Team Member</h4>
+        <p className="text-blue-600 font-semibold text-xs sm:text-sm">FULL-STACK DEVELOPER</p>
+      </div>
+    </div>
+    
+    {/* Team Member 4 */}
+    <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
+      <div className="w-full h-48 sm:h-52 md:h-56">
+        <img 
+          src={require('../assets/team1.png')} 
+          alt="Team Member" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="p-4 sm:p-5">
+        <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Team Member</h4>
+        <p className="text-blue-600 font-semibold text-xs sm:text-sm">FULL-STACK DEVELOPER</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
   </div>
 </section>
 
