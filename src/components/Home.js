@@ -20,7 +20,7 @@ const Home = () => {
     lg:ml-8  /* Add some left margin on desktop */
   ">
     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-bold text-gray-900 mb-2 lg:mb-3 leading-tight">
-      CubeTech Innovations
+      CubeTech Innovations inc
     </h1>
     
     <h2 className="text-lg sm:text-xl md:text-2xl lg:text-lg xl:text-xl text-sky-500 mb-3 lg:mb-4 font-medium">
