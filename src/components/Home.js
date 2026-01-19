@@ -226,33 +226,28 @@ const Home = () => {
         </div>
       </div>
       
-      {/* Right: Text/Comments Sidebar */}
+      {/* Right: Text Sidebar with Your Context */}
       <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md border border-gray-100">
-        <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
-          Our Story & Values
-        </h3>
-        
-        <div className="space-y-4 sm:space-y-6">
-          <div>
-            <h4 className="font-bold text-blue-600 mb-2">Innovation Driven</h4>
-            <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-              We constantly explore new technologies and methodologies to deliver cutting-edge solutions that keep our clients ahead of the competition.
-            </p>
-          </div>
+        <div className="space-y-4 sm:space-y-5">
+          <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+            We're a passionate and innovative team based in Cebu, Philippines, dedicated to delivering exceptional products that our customers love and rely on.
+          </p>
           
-          <div>
-            <h4 className="font-bold text-blue-600 mb-2">Client-Centric Approach</h4>
-            <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-              Every project begins with understanding your unique needs. We work closely with you to ensure our solutions align perfectly with your business goals.
-            </p>
-          </div>
+          <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+            At CubeTech, we pride ourselves on our collaborative culture, fostering an environment where creativity thrives and every voice matters.
+          </p>
           
-          <div>
-            <h4 className="font-bold text-blue-600 mb-2">Quality Assurance</h4>
-            <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-              Rigorous testing and quality checks are embedded in our development process to deliver reliable, secure, and high-performance software.
-            </p>
-          </div>
+          <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+            Together, we strive for excellence in everything we do, ensuring that we exceed expectations and make a positive impact in our community.
+          </p>
+          
+          <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+            CubeTech is all about crafting software solutions that meet client needs and drive growth. We're focused on building secure, user-friendly tools that add value—no hidden costs, just straightforward solutions.
+          </p>
+          
+          <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+            By enhancing productivity, we aim to be a reliable partner our clients can count on for the long haul.
+          </p>
         </div>
       </div>
     </div>
