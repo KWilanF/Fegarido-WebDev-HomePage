@@ -213,13 +213,13 @@ const Home = () => {
       <div className="w-full h-48 sm:h-52 md:h-56">
         <img 
           src={require('../assets/team1.png')} 
-          alt="Denver Son" 
+          alt="Sadik Rahman" 
           className="w-full h-full object-cover"
         />
       </div>
       <div className="p-4 sm:p-5">
-        <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Denver Son</h4>
-        <p className="text-blue-600 font-semibold text-xs sm:text-sm">FULL-STACK DEVELOPER</p>
+        <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Sadik Rahman</h4>
+        <p className="text-blue-600 font-semibold text-xs sm:text-sm">DIRECTOR</p>
       </div>
     </div>
     
@@ -228,13 +228,13 @@ const Home = () => {
       <div className="w-full h-48 sm:h-52 md:h-56">
         <img 
           src={require('../assets/team2.png')} 
-          alt="Team Member" 
+          alt="Cherry White" 
           className="w-full h-full object-cover"
         />
       </div>
       <div className="p-4 sm:p-5">
-        <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Team Member</h4>
-        <p className="text-blue-600 font-semibold text-xs sm:text-sm">FULL-STACK DEVELOPER</p>
+        <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Cherry White</h4>
+        <p className="text-blue-600 font-semibold text-xs sm:text-sm">SALES AND MARKETING</p>
       </div>
     </div>
     
@@ -243,13 +243,13 @@ const Home = () => {
       <div className="w-full h-48 sm:h-52 md:h-56">
         <img 
           src={require('../assets/team2.png')} 
-          alt="Team Member" 
+          alt="Angeline Yap" 
           className="w-full h-full object-cover"
         />
       </div>
       <div className="p-4 sm:p-5">
-        <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Team Member</h4>
-        <p className="text-blue-600 font-semibold text-xs sm:text-sm">FULL-STACK DEVELOPER</p>
+        <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Angeline Yap</h4>
+        <p className="text-blue-600 font-semibold text-xs sm:text-sm">FINANCE MANAGER</p>
       </div>
     </div>
     
@@ -258,12 +258,12 @@ const Home = () => {
       <div className="w-full h-48 sm:h-52 md:h-56">
         <img 
           src={require('../assets/team1.png')} 
-          alt="Team Member" 
+          alt="Denver Son" 
           className="w-full h-full object-cover"
         />
       </div>
       <div className="p-4 sm:p-5">
-        <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Team Member</h4>
+        <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Denver Son</h4>
         <p className="text-blue-600 font-semibold text-xs sm:text-sm">FULL-STACK DEVELOPER</p>
       </div>
     </div>
