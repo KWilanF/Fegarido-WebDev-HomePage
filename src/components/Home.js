@@ -6,7 +6,7 @@ const Home = () => {
     <div className="overflow-x-hidden">
       {/* Hero Section */}
       <section className="min-h-screen flex items-center bg-gradient-to-br from-gray-50 to-white pt-16 md:pt-0">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full -mt-2">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
             
             {/* Left Container - Text Content */}
@@ -68,7 +68,7 @@ const Home = () => {
 </div>
             
             {/* Right Container - Image */}
-            <div className="w-full lg:w-1/2 order-1 lg:order-2">
+            <div className="w-full lg:w-1/2 order-1 lg:order-2 -mt-32">
               <img 
                 src={heroImage}
                 alt="CubeTech Digital Solutions"
@@ -287,42 +287,84 @@ const Home = () => {
           
           {/* Testimonials Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-20">
-            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md">
-              <div className="mb-6 sm:mb-8">
-                <p className="text-gray-600 italic leading-relaxed text-sm sm:text-base">
-                  "Don't walk behind me; I may not lead. Don't walk in front of me; I may not follow. Just walk beside me and be my friend."
-                </p>
-              </div>
-              <div>
-                <h4 className="font-bold text-gray-900 text-base sm:text-lg">Anne Curtis</h4>
-                <p className="text-gray-500 text-sm sm:text-base">CEO @ WASHO WASHO LTD.</p>
-              </div>
-            </div>
-            
-            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md">
-              <div className="mb-6 sm:mb-8">
-                <p className="text-gray-600 italic leading-relaxed text-sm sm:text-base">
-                  "The pessimist complains about the wind; the optimist expects it to change; the realist adjusts the sails."
-                </p>
-              </div>
-              <div>
-                <h4 className="font-bold text-gray-900 text-base sm:text-lg">Kim Sam Son</h4>
-                <p className="text-gray-500 text-sm sm:text-base">MARKETING @ WADIRI WADIDITO INC.</p>
-              </div>
-            </div>
-            
-            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md">
-              <div className="mb-6 sm:mb-8">
-                <p className="text-gray-600 italic leading-relaxed text-sm sm:text-base">
-                  "공이 당신을 바라보고, 공이 없는 곳은 모든 가치를 넘겨주다."
-                </p>
-              </div>
-              <div>
-                <h4 className="font-bold text-gray-900 text-base sm:text-lg">Kim Soo-Hyun</h4>
-                <p className="text-gray-500 text-sm sm:text-base">CFO @ WADIRI WADIDITO INC.</p>
-              </div>
-            </div>
-          </div>
+  {/* Testimonial 1 - Anne Curtis */}
+  <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md">
+    <div className="flex items-start gap-4 mb-6 sm:mb-8">
+      {/* Profile Image */}
+      <div className="flex-shrink-0">
+        <img 
+          src={require('../assets/team1.png')}
+          alt="Anne Curtis" 
+          className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-2 border-gray-100"
+        />
+      </div>
+      {/* Quote */}
+      <div>
+        <p className="text-gray-600 italic leading-relaxed text-sm sm:text-base">
+          "Don't walk behind me; I may not lead. Don't walk in front of me; I may not follow. Just walk beside me and be my friend."
+        </p>
+      </div>
+    </div>
+    <div className="flex items-center gap-3">
+      <div>
+        <h4 className="font-bold text-gray-900 text-base sm:text-lg">Anne Curtis</h4>
+        <p className="text-gray-500 text-sm sm:text-base">CEO @ WASHO WASHO LTD.</p>
+      </div>
+    </div>
+  </div>
+  
+  {/* Testimonial 2 - Kim Sam Son */}
+  <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md">
+    <div className="flex items-start gap-4 mb-6 sm:mb-8">
+      {/* Profile Image */}
+      <div className="flex-shrink-0">
+        <img 
+          src={require('../assets/team2.png')}
+          alt="Kim Sam Son" 
+          className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-2 border-gray-100"
+        />
+      </div>
+      {/* Quote */}
+      <div>
+        <p className="text-gray-600 italic leading-relaxed text-sm sm:text-base">
+          "The pessimist complains about the wind; the optimist expects it to change; the realist adjusts the sails."
+        </p>
+      </div>
+    </div>
+    <div className="flex items-center gap-3">
+      <div>
+        <h4 className="font-bold text-gray-900 text-base sm:text-lg">Kim Sam Son</h4>
+        <p className="text-gray-500 text-sm sm:text-base">MARKETING @ WADIRI WADIDITO INC.</p>
+      </div>
+    </div>
+  </div>
+  
+  {/* Testimonial 3 - Kim Soo-Hyun */}
+  <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md">
+    <div className="flex items-start gap-4 mb-6 sm:mb-8">
+      {/* Profile Image */}
+      <div className="flex-shrink-0">
+        <img 
+          src={require('../assets/qr.jpg')}
+          alt="Kim Soo-Hyun" 
+          className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-2 border-gray-100"
+        />
+      </div>
+      {/* Quote */}
+      <div>
+        <p className="text-gray-600 italic leading-relaxed text-sm sm:text-base">
+          "공이 당신을 바라보고, 공이 없는 곳은 모든 가치를 넘겨주다."
+        </p>
+      </div>
+    </div>
+    <div className="flex items-center gap-3">
+      <div>
+        <h4 className="font-bold text-gray-900 text-base sm:text-lg">Kim Soo-Hyun</h4>
+        <p className="text-gray-500 text-sm sm:text-base">CFO @ WADIRI WADIDITO INC.</p>
+      </div>
+    </div>
+  </div>
+</div>
           
           {/* Contact Form */}
           <div className="bg-white p-6 sm:p-8 md:p-12 rounded-xl shadow-md">
