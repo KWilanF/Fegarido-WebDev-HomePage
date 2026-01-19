@@ -177,11 +177,85 @@ const Home = () => {
 </section>
 
       {/* Section 3: About CubeTech & Team */}
-     <section className="bg-gray-300 py-12 sm:py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+<section className="bg-gray-300 py-12 sm:py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
   <div className="mb-12 sm:mb-16">
     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-8 sm:mb-10">
       We're CubeTech
     </h2>
+    
+    {/* Gallery + Text Section */}
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-10 mb-12 sm:mb-16">
+      {/* Left: 2x2 Image Grid */}
+      <div className="lg:col-span-2">
+        <div className="grid grid-cols-2 gap-4 sm:gap-6">
+          {/* Row 1 - Column 1 */}
+          <div className="aspect-square rounded-lg overflow-hidden shadow-md">
+            <img 
+              src={require('../assets/team1.png')}
+              alt="CubeTech Team Collaboration"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          
+          {/* Row 1 - Column 2 */}
+          <div className="aspect-square rounded-lg overflow-hidden shadow-md">
+            <img 
+              src={require('../assets/team2.png')}
+              alt="CubeTech Office Space"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          
+          {/* Row 2 - Column 1 */}
+          <div className="aspect-square rounded-lg overflow-hidden shadow-md">
+            <img 
+              src={require('../assets/qr.jpg')}
+              alt="CubeTech Technology"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          
+          {/* Row 2 - Column 2 */}
+          <div className="aspect-square rounded-lg overflow-hidden shadow-md">
+            <img 
+              src={require('../assets/team1.png')}
+              alt="CubeTech Projects"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        </div>
+      </div>
+      
+      {/* Right: Text/Comments Sidebar */}
+      <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md border border-gray-100">
+        <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
+          Our Story & Values
+        </h3>
+        
+        <div className="space-y-4 sm:space-y-6">
+          <div>
+            <h4 className="font-bold text-blue-600 mb-2">Innovation Driven</h4>
+            <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+              We constantly explore new technologies and methodologies to deliver cutting-edge solutions that keep our clients ahead of the competition.
+            </p>
+          </div>
+          
+          <div>
+            <h4 className="font-bold text-blue-600 mb-2">Client-Centric Approach</h4>
+            <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+              Every project begins with understanding your unique needs. We work closely with you to ensure our solutions align perfectly with your business goals.
+            </p>
+          </div>
+          
+          <div>
+            <h4 className="font-bold text-blue-600 mb-2">Quality Assurance</h4>
+            <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+              Rigorous testing and quality checks are embedded in our development process to deliver reliable, secure, and high-performance software.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     
     {/* Mission & Vision Boxes */}
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
@@ -200,76 +274,74 @@ const Home = () => {
     </div>
     
     {/* Team Section */}
-   <div className="px-4 sm:px-6 lg:px-8">
-  <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-8 sm:mb-12">
-    Our Team
-  </h3>
-  
-  {/* Team Grid - Always 2 per row on mobile, 4 on desktop */}
-  <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
-    
-    {/* Team Member 1 */}
-    <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
-      <div className="w-full h-48 sm:h-52 md:h-56">
-        <img 
-          src={require('../assets/team1.png')} 
-          alt="Sadik Rahman" 
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div className="p-4 sm:p-5">
-        <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Sadik Rahman</h4>
-        <p className="text-blue-600 font-semibold text-xs sm:text-sm">DIRECTOR</p>
+    <div className="px-4 sm:px-6 lg:px-8">
+      <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-8 sm:mb-12">
+        Our Team
+      </h3>
+      
+      {/* Team Grid - Always 2 per row on mobile, 4 on desktop */}
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+        {/* Team Member 1 */}
+        <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
+          <div className="w-full h-48 sm:h-52 md:h-56">
+            <img 
+              src={require('../assets/team1.png')} 
+              alt="Sadik Rahman" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="p-4 sm:p-5">
+            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Sadik Rahman</h4>
+            <p className="text-blue-600 font-semibold text-xs sm:text-sm">DIRECTOR</p>
+          </div>
+        </div>
+        
+        {/* Team Member 2 */}
+        <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
+          <div className="w-full h-48 sm:h-52 md:h-56">
+            <img 
+              src={require('../assets/team2.png')} 
+              alt="Cherry White" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="p-4 sm:p-5">
+            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Cherry White</h4>
+            <p className="text-blue-600 font-semibold text-xs sm:text-sm">SALES AND MARKETING</p>
+          </div>
+        </div>
+        
+        {/* Team Member 3 */}
+        <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
+          <div className="w-full h-48 sm:h-52 md:h-56">
+            <img 
+              src={require('../assets/team2.png')} 
+              alt="Angeline Yap" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="p-4 sm:p-5">
+            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Angeline Yap</h4>
+            <p className="text-blue-600 font-semibold text-xs sm:text-sm">FINANCE MANAGER</p>
+          </div>
+        </div>
+        
+        {/* Team Member 4 */}
+        <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
+          <div className="w-full h-48 sm:h-52 md:h-56">
+            <img 
+              src={require('../assets/team1.png')} 
+              alt="Denver Son" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="p-4 sm:p-5">
+            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Denver Son</h4>
+            <p className="text-blue-600 font-semibold text-xs sm:text-sm">FULL-STACK DEVELOPER</p>
+          </div>
+        </div>
       </div>
     </div>
-    
-    {/* Team Member 2 */}
-    <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
-      <div className="w-full h-48 sm:h-52 md:h-56">
-        <img 
-          src={require('../assets/team2.png')} 
-          alt="Cherry White" 
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div className="p-4 sm:p-5">
-        <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Cherry White</h4>
-        <p className="text-blue-600 font-semibold text-xs sm:text-sm">SALES AND MARKETING</p>
-      </div>
-    </div>
-    
-    {/* Team Member 3 */}
-    <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
-      <div className="w-full h-48 sm:h-52 md:h-56">
-        <img 
-          src={require('../assets/team2.png')} 
-          alt="Angeline Yap" 
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div className="p-4 sm:p-5">
-        <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Angeline Yap</h4>
-        <p className="text-blue-600 font-semibold text-xs sm:text-sm">FINANCE MANAGER</p>
-      </div>
-    </div>
-    
-    {/* Team Member 4 */}
-    <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
-      <div className="w-full h-48 sm:h-52 md:h-56">
-        <img 
-          src={require('../assets/team1.png')} 
-          alt="Denver Son" 
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div className="p-4 sm:p-5">
-        <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Denver Son</h4>
-        <p className="text-blue-600 font-semibold text-xs sm:text-sm">FULL-STACK DEVELOPER</p>
-      </div>
-    </div>
-    
-  </div>
-</div>
   </div>
 </section>
 
