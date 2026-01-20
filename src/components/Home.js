@@ -176,6 +176,8 @@ const Home = () => {
   </div>
 </section>
 
+
+
 {/* Section 3: About CubeTech & Team */}
 <section className="bg-gray-300 py-12 sm:py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
   <div className="mb-12 sm:mb-16">
@@ -190,49 +192,49 @@ const Home = () => {
     <div className="grid grid-cols-2 gap-3 sm:gap-4 relative">
       {/* Rotated container for the whole grid */}
       <div className="col-span-2 grid grid-cols-2 gap-3 sm:gap-4 transform -rotate-1">
-        {/* Row 1 - Column 1 - Rotated slightly differently */}
-        <div className="transform rotate-2 overflow-hidden rounded-lg shadow-md">
-          <div className="w-full h-32 sm:h-40 md:h-48">
-            <img 
-              src={require('../assets/team1.png')}
-              alt="CubeTech Team Collaboration"
-              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-            />
-          </div>
-        </div>
-        
-        {/* Row 1 - Column 2 - Rotated slightly differently */}
-        <div className="transform -rotate-1 overflow-hidden rounded-lg shadow-md">
-          <div className="w-full h-32 sm:h-40 md:h-48">
-            <img 
-              src={require('../assets/team2.png')}
-              alt="CubeTech Office Space"
-              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-            />
-          </div>
-        </div>
-        
-        {/* Row 2 - Column 1 - Rotated slightly differently */}
-        <div className="transform -rotate-2 overflow-hidden rounded-lg shadow-md">
-          <div className="w-full h-32 sm:h-40 md:h-48">
-            <img 
-              src={require('../assets/qr.jpg')}
-              alt="CubeTech Technology"
-              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-            />
-          </div>
-        </div>
-        
-        {/* Row 2 - Column 2 - Rotated slightly differently */}
-        <div className="transform rotate-1 overflow-hidden rounded-lg shadow-md">
-          <div className="w-full h-32 sm:h-40 md:h-48">
-            <img 
-              src={require('../assets/team1.png')}
-              alt="CubeTech Projects"
-              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-            />
-          </div>
-        </div>
+       {/* Row 1 - Column 1 */}
+<div className="transform rotate-2 overflow-hidden rounded-lg shadow-md">
+  <div className="w-full h-36 sm:h-44 md:h-52"> {/* Adjusted here */}
+    <img 
+      src={require('../assets/team1.png')}
+      alt="CubeTech Team Collaboration"
+      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+    />
+  </div>
+</div>
+
+{/* Row 1 - Column 2 */}
+<div className="transform -rotate-1 overflow-hidden rounded-lg shadow-md">
+  <div className="w-full h-36 sm:h-44 md:h-52"> {/* Adjusted here */}
+    <img 
+      src={require('../assets/team2.png')}
+      alt="CubeTech Office Space"
+      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+    />
+  </div>
+</div>
+
+{/* Row 2 - Column 1 */}
+<div className="transform -rotate-2 overflow-hidden rounded-lg shadow-md">
+  <div className="w-full h-36 sm:h-44 md:h-52"> {/* Adjusted here */}
+    <img 
+      src={require('../assets/qr.jpg')}
+      alt="CubeTech Technology"
+      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+    />
+  </div>
+</div>
+
+{/* Row 2 - Column 2 */}
+<div className="transform rotate-1 overflow-hidden rounded-lg shadow-md">
+  <div className="w-full h-36 sm:h-44 md:h-52"> {/* Adjusted here */}
+    <img 
+      src={require('../assets/team1.png')}
+      alt="CubeTech Projects"
+      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+    />
+  </div>
+</div>
       </div>
     </div>
   </div>
