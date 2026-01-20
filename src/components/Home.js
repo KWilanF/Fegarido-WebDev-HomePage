@@ -196,7 +196,7 @@ const Home = () => {
         <div className="transform rotate-3 overflow-hidden rounded-lg shadow-md">
           <div className="w-48 h-32 sm:w-56 sm:h-36 md:w-64 md:h-40">
             <img 
-              src={require('../assets/team1.png')}
+              src={require('../assets/stat.jpg')}
               alt="CubeTech Team"
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
             />
@@ -207,7 +207,7 @@ const Home = () => {
         <div className="transform -rotate-2 overflow-hidden rounded-lg shadow-md">
           <div className="w-48 h-32 sm:w-56 sm:h-36 md:w-64 md:h-40">
             <img 
-              src={require('../assets/team2.png')}
+              src={require('../assets/qr.jpg')}
               alt="CubeTech Office"
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
             />
