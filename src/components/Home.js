@@ -193,7 +193,7 @@ const Home = () => {
             <img 
               src={require('../assets/team1.png')}
               alt="CubeTech Team Collaboration"
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              className="w-40 h-40 object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
           
@@ -202,7 +202,7 @@ const Home = () => {
             <img 
               src={require('../assets/team2.png')}
               alt="CubeTech Office Space"
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              className="w-40 h-40 object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
           
@@ -211,7 +211,7 @@ const Home = () => {
             <img 
               src={require('../assets/qr.jpg')}
               alt="CubeTech Technology"
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              className="w-40 h-40 object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
           
@@ -220,7 +220,7 @@ const Home = () => {
             <img 
               src={require('../assets/team1.png')}
               alt="CubeTech Projects"
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              className="w-40 h-40 object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
         </div>
