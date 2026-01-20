@@ -177,7 +177,7 @@ const Home = () => {
 </section>
 
 {/* Section 3: About CubeTech & Team */}
-<section className="bg-gray-50 py-12 sm:py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+<section className="bg-gray-300 py-12 sm:py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
   <div className="mb-12 sm:mb-16">
     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-600 text-center mb-8 sm:mb-10">
       We're CubeTech
