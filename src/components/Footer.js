@@ -112,6 +112,21 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
+              
+                           {/* Products */}
+              <div>
+                <h3 className="font-bold text-gray-800 mb-4">Products</h3>
+                <ul className="space-y-2">
+                  <li>
+                    <button 
+                      onClick={() => console.log('SnapServe clicked')}
+                      className="text-gray-600 hover:text-gray-900 transition-colors text-sm"
+                    >
+                      SnapServe
+                    </button>
+                  </li>
+                </ul>
+              </div>
 
               {/* Services */}
               <div>
@@ -139,21 +154,6 @@ const Footer = () => {
                       className="text-gray-600 hover:text-gray-900 transition-colors text-sm"
                     >
                       Job Search
-                    </button>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Products */}
-              <div>
-                <h3 className="font-bold text-gray-800 mb-4">Products</h3>
-                <ul className="space-y-2">
-                  <li>
-                    <button 
-                      onClick={() => console.log('SnapServe clicked')}
-                      className="text-gray-600 hover:text-gray-900 transition-colors text-sm"
-                    >
-                      SnapServe
                     </button>
                   </li>
                 </ul>
