@@ -239,26 +239,26 @@ const Home = () => {
     </div>
   </div>
   
-  {/* Right: Expanded Text Sidebar (Rectangular) */}
-  <div className="bg-gray-100 p-4 sm:p-5 md:p-6 rounded-lg shadow-sm border border-gray-200 h-full">
-    <div className="space-y-2 sm:space-y-3">
-      <p className="text-gray-700 text-xs sm:text-sm leading-relaxed">
+  {/* Right: Rectangular Text Sidebar */}
+  <div className="bg-gray-100 p-5 sm:p-6 rounded-lg shadow-sm border border-gray-200 flex items-center">
+    <div className="space-y-3 sm:space-y-4">
+      <p className="text-gray-700 text-sm leading-relaxed">
         We're a passionate and innovative team based in Cebu, Philippines, dedicated to delivering exceptional products that our customers love and rely on.
       </p>
       
-      <p className="text-gray-700 text-xs sm:text-sm leading-relaxed">
+      <p className="text-gray-700 text-sm leading-relaxed">
         At CubeTech, we pride ourselves on our collaborative culture, fostering an environment where creativity thrives and every voice matters.
       </p>
       
-      <p className="text-gray-700 text-xs sm:text-sm leading-relaxed">
+      <p className="text-gray-700 text-sm leading-relaxed">
         Together, we strive for excellence in everything we do, ensuring that we exceed expectations and make a positive impact in our community.
       </p>
       
-      <p className="text-gray-700 text-xs sm:text-sm leading-relaxed">
+      <p className="text-gray-700 text-sm leading-relaxed">
         CubeTech is all about crafting software solutions that meet client needs and drive growth. We're focused on building secure, user-friendly tools that add value—no hidden costs, just straightforward solutions.
       </p>
       
-      <p className="text-gray-700 text-xs sm:text-sm leading-relaxed">
+      <p className="text-gray-700 text-sm leading-relaxed">
         By enhancing productivity, we aim to be a reliable partner our clients can count on for the long haul.
       </p>
     </div>
