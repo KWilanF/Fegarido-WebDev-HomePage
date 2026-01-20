@@ -179,78 +179,89 @@ const Home = () => {
 
 
 {/* Section 3: About CubeTech & Team */}
-<section className="bg-white py-12 sm:py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+<section className="bg-gray-300 py-12 sm:py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
   <div className="mb-12 sm:mb-16">
     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-600 text-center mb-8 sm:mb-10">
       We're CubeTech
     </h2>
     
-    {/* Gallery + Text Section */}
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 mb-12 sm:mb-16">
-      {/* Left: Gallery with 2x2 Grid - 4 equal images */}
-      <div className="space-y-4">
-        <div className="grid grid-cols-2 gap-4">
-          {/* Top Left */}
-          <div className="overflow-hidden rounded-lg shadow-md h-48 sm:h-56">
+   {/* Gallery + Text Section */}
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 mb-12 sm:mb-16">
+  {/* Left: Gallery with 2x2 Grid - 4 smaller tilted images */}
+  <div className="flex justify-center lg:justify-start">
+    <div className="relative">
+      {/* Main container with slight rotation */}
+      <div className="grid grid-cols-2 gap-3 sm:gap-4 transform -rotate-2">
+        {/* Top Left - Rotated clockwise */}
+        <div className="transform rotate-3 overflow-hidden rounded-lg shadow-md">
+          <div className="w-40 h-24 sm:w-44 sm:h-28">
             <img 
               src={require('../assets/team1.png')}
               alt="CubeTech Team"
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
             />
           </div>
-          
-          {/* Top Right */}
-          <div className="overflow-hidden rounded-lg shadow-md h-48 sm:h-56">
+        </div>
+        
+        {/* Top Right - Rotated counter-clockwise */}
+        <div className="transform -rotate-2 overflow-hidden rounded-lg shadow-md">
+          <div className="w-40 h-24 sm:w-44 sm:h-28">
             <img 
               src={require('../assets/team2.png')}
               alt="CubeTech Office"
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
             />
           </div>
-          
-          {/* Bottom Left */}
-          <div className="overflow-hidden rounded-lg shadow-md h-48 sm:h-56">
+        </div>
+        
+        {/* Bottom Left - Rotated counter-clockwise */}
+        <div className="transform -rotate-1 overflow-hidden rounded-lg shadow-md">
+          <div className="w-40 h-24 sm:w-44 sm:h-28">
             <img 
               src={require('../assets/qr.jpg')}
               alt="CubeTech Technology"
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
             />
           </div>
-          
-          {/* Bottom Right */}
-          <div className="overflow-hidden rounded-lg shadow-md h-48 sm:h-56">
+        </div>
+        
+        {/* Bottom Right - Rotated clockwise */}
+        <div className="transform rotate-2 overflow-hidden rounded-lg shadow-md">
+          <div className="w-40 h-24 sm:w-44 sm:h-28">
             <img 
               src={require('../assets/stat.jpg')}
               alt="CubeTech Statistics"
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
             />
           </div>
         </div>
       </div>
-      
-      {/* Right: Text Content */}
-      <div className="flex flex-col justify-center">
-        <div className="space-y-4 sm:space-y-6">
-          <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">About CubeTech</h3>
-          
-          <p className="text-gray-700 leading-relaxed">
-            At CubeTech, we pride ourselves on our collaborative culture, fostering an environment where creativity thrives and every voice matters.
-          </p>
-          
-          <p className="text-gray-700 leading-relaxed">
-            We're a passionate and innovative team based in Cebu, Philippines, dedicated to delivering exceptional products that our customers love and rely on.
-          </p>
-          
-          <p className="text-gray-700 leading-relaxed">
-            Together, we strive for excellence in everything we do, ensuring that we exceed expectations and make a positive impact in our community.
-          </p>
-          
-          <p className="text-gray-700 leading-relaxed">
-            CubeTech is all about crafting software solutions that meet client needs and drive growth. We're focused on building secure, user-friendly tools that add value—no hidden costs, just straightforward solutions.
-          </p>
-        </div>
-      </div>
     </div>
+  </div>
+  
+  {/* Right: Text Content */}
+  <div className="flex flex-col justify-center">
+    <div className="space-y-4 sm:space-y-6">
+      <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">About CubeTech</h3>
+      
+      <p className="text-gray-700 leading-relaxed">
+        At CubeTech, we pride ourselves on our collaborative culture, fostering an environment where creativity thrives and every voice matters.
+      </p>
+      
+      <p className="text-gray-700 leading-relaxed">
+        We're a passionate and innovative team based in Cebu, Philippines, dedicated to delivering exceptional products that our customers love and rely on.
+      </p>
+      
+      <p className="text-gray-700 leading-relaxed">
+        Together, we strive for excellence in everything we do, ensuring that we exceed expectations and make a positive impact in our community.
+      </p>
+      
+      <p className="text-gray-700 leading-relaxed">
+        CubeTech is all about crafting software solutions that meet client needs and drive growth. We're focused on building secure, user-friendly tools that add value—no hidden costs, just straightforward solutions.
+      </p>
+    </div>
+  </div>
+</div>
     
     {/* Mission & Vision Boxes */}
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
