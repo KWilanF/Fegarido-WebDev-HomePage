@@ -187,14 +187,14 @@ const Home = () => {
     
   {/* Gallery + Text Section */}
 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 mb-12 sm:mb-16">
-  {/* Left: Gallery with 2x2 Grid - 4 smaller tilted images */}
+  {/* Left: Gallery with 2x2 Grid - 4 larger tilted images */}
   <div className="flex items-center justify-center lg:justify-start">
     <div className="relative">
       {/* Main container with slight rotation */}
-      <div className="grid grid-cols-2 gap-3 sm:gap-4 transform -rotate-2">
+      <div className="grid grid-cols-2 gap-4 sm:gap-6 transform -rotate-2">
         {/* Top Left - Rotated clockwise */}
         <div className="transform rotate-3 overflow-hidden rounded-lg shadow-md">
-          <div className="w-48 h-32 sm:w-40 sm:h-28">
+          <div className="w-48 h-32 sm:w-56 sm:h-36 md:w-64 md:h-40">
             <img 
               src={require('../assets/team1.png')}
               alt="CubeTech Team"
@@ -205,7 +205,7 @@ const Home = () => {
         
         {/* Top Right - Rotated counter-clockwise */}
         <div className="transform -rotate-2 overflow-hidden rounded-lg shadow-md">
-          <div className="w-48 h-32 sm:w-40 sm:h-28">
+          <div className="w-48 h-32 sm:w-56 sm:h-36 md:w-64 md:h-40">
             <img 
               src={require('../assets/team2.png')}
               alt="CubeTech Office"
@@ -216,7 +216,7 @@ const Home = () => {
         
         {/* Bottom Left - Rotated counter-clockwise */}
         <div className="transform -rotate-1 overflow-hidden rounded-lg shadow-md">
-          <div className="w-48 h-32 sm:w-40 sm:h-28">
+          <div className="w-48 h-32 sm:w-56 sm:h-36 md:w-64 md:h-40">
             <img 
               src={require('../assets/qr.jpg')}
               alt="CubeTech Technology"
@@ -227,7 +227,7 @@ const Home = () => {
         
         {/* Bottom Right - Rotated clockwise */}
         <div className="transform rotate-2 overflow-hidden rounded-lg shadow-md">
-          <div className="w-48 h-32 sm:w-40 sm:h-28">
+          <div className="w-48 h-32 sm:w-56 sm:h-36 md:w-64 md:h-40">
             <img 
               src={require('../assets/stat.jpg')}
               alt="CubeTech Statistics"
