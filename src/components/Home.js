@@ -193,7 +193,7 @@ const Home = () => {
       {/* Rotated container for the whole grid */}
       <div className="col-span-2 grid grid-cols-2 gap-3 sm:gap-4 transform -rotate-1">
         {/* Row 1 - Column 1 */}
-        <div className="transform rotate-2 overflow-hidden rounded-lg shadow-md">
+        <div className="w-40  transform rotate-2 overflow-hidden rounded-lg shadow-md">
           <div className="w-40 h-24"> {/* Fixed width 40, height 24 */}
             <img 
               src={require('../assets/team1.png')}
@@ -204,7 +204,7 @@ const Home = () => {
         </div>
         
         {/* Row 1 - Column 2 */}
-        <div className="transform -rotate-1 overflow-hidden rounded-lg shadow-md">
+        <div className="w-40 transform -rotate-1 overflow-hidden rounded-lg shadow-md">
           <div className="w-40 h-24"> {/* Fixed width 40, height 24 */}
             <img 
               src={require('../assets/team2.png')}
@@ -215,7 +215,7 @@ const Home = () => {
         </div>
         
         {/* Row 2 - Column 1 */}
-        <div className="transform -rotate-2 overflow-hidden rounded-lg shadow-md">
+        <div className="w-40 transform -rotate-2 overflow-hidden rounded-lg shadow-md">
           <div className="w-40 h-24"> {/* Fixed width 40, height 24 */}
             <img 
               src={require('../assets/qr.jpg')}
@@ -226,7 +226,7 @@ const Home = () => {
         </div>
         
         {/* Row 2 - Column 2 */}
-        <div className="transform rotate-1 overflow-hidden rounded-lg shadow-md">
+        <div className="w-40 transform rotate-1 overflow-hidden rounded-lg shadow-md">
           <div className="w-40 h-24"> {/* Fixed width 40, height 24 */}
             <img 
               src={require('../assets/team1.png')}
