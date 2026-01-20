@@ -176,7 +176,7 @@ const Home = () => {
   </div>
 </section>
 
-      {/* Section 3: About CubeTech & Team */}
+{/* Section 3: About CubeTech & Team */}
 <section className="bg-gray-300 py-12 sm:py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
   <div className="mb-12 sm:mb-16">
     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-600 text-center mb-8 sm:mb-10">
@@ -185,7 +185,7 @@ const Home = () => {
     
     {/* Gallery + Text Section */}
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-10 mb-12 sm:mb-16">
-      {/* Left: 2x2 Image Grid */}
+      {/* Left: 2x2 Image Grid - Smaller on desktop */}
       <div className="lg:col-span-2">
         <div className="grid grid-cols-2 gap-4 sm:gap-6">
           {/* Row 1 - Column 1 */}
@@ -278,7 +278,7 @@ const Home = () => {
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
         {/* Team Member 1 */}
         <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
-          <div className="w-full h-48 sm:h-52 md:h-56">
+          <div className="w-full h-48 sm:h-52 md:h-64 lg:h-72 xl:h-80">
             <img 
               src={require('../assets/team1.png')} 
               alt="Sadik Rahman" 
@@ -293,7 +293,7 @@ const Home = () => {
         
         {/* Team Member 2 */}
         <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
-          <div className="w-full h-48 sm:h-52 md:h-56">
+          <div className="w-full h-48 sm:h-52 md:h-64 lg:h-72 xl:h-80">
             <img 
               src={require('../assets/team2.png')} 
               alt="Cherry White" 
@@ -308,7 +308,7 @@ const Home = () => {
         
         {/* Team Member 3 */}
         <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
-          <div className="w-full h-48 sm:h-52 md:h-56">
+          <div className="w-full h-48 sm:h-52 md:h-64 lg:h-72 xl:h-80">
             <img 
               src={require('../assets/team2.png')} 
               alt="Angeline Yap" 
@@ -323,7 +323,7 @@ const Home = () => {
         
         {/* Team Member 4 */}
         <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
-          <div className="w-full h-48 sm:h-52 md:h-56">
+          <div className="w-full h-48 sm:h-52 md:h-64 lg:h-72 xl:h-80">
             <img 
               src={require('../assets/team1.png')} 
               alt="Denver Son" 
