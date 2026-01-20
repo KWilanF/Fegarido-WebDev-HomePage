@@ -187,11 +187,11 @@ const Home = () => {
     
     {/* Gallery + Text Section */}
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 mb-12 sm:mb-16">
-      {/* Left: Gallery with 2x2 Grid */}
+      {/* Left: Gallery with 2x2 Grid - 4 equal images */}
       <div className="space-y-4">
         <div className="grid grid-cols-2 gap-4">
-          {/* Top Left - Square Image */}
-          <div className="overflow-hidden rounded-lg shadow-md">
+          {/* Top Left */}
+          <div className="overflow-hidden rounded-lg shadow-md h-48 sm:h-56">
             <img 
               src={require('../assets/team1.png')}
               alt="CubeTech Team"
@@ -199,8 +199,8 @@ const Home = () => {
             />
           </div>
           
-          {/* Top Right - Taller Image */}
-          <div className="overflow-hidden rounded-lg shadow-md row-span-2">
+          {/* Top Right */}
+          <div className="overflow-hidden rounded-lg shadow-md h-48 sm:h-56">
             <img 
               src={require('../assets/team2.png')}
               alt="CubeTech Office"
@@ -208,11 +208,20 @@ const Home = () => {
             />
           </div>
           
-          {/* Bottom Left - Square Image */}
-          <div className="overflow-hidden rounded-lg shadow-md">
+          {/* Bottom Left */}
+          <div className="overflow-hidden rounded-lg shadow-md h-48 sm:h-56">
             <img 
               src={require('../assets/qr.jpg')}
               alt="CubeTech Technology"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          
+          {/* Bottom Right */}
+          <div className="overflow-hidden rounded-lg shadow-md h-48 sm:h-56">
+            <img 
+              src={require('../assets/stat.jpg')}
+              alt="CubeTech Statistics"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
