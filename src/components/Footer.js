@@ -80,7 +80,7 @@ const Footer = () => {
           <div className="lg:w-1/2 xl:w-3/5">
             
             {/* Desktop Layout: Horizontal */}
-            <div className="hidden lg:flex justify-between gap-8 xl:gap-12">
+            <div className="hidden lg:flex justify-between gap-8 xl:gap-9">
               
               {/* Company */}
               <div>
