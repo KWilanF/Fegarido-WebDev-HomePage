@@ -185,61 +185,61 @@ const Home = () => {
       We're CubeTech
     </h2>
     
-   {/* Gallery + Text Section */}
-<div className="grid grid-cols-1 lg:grid-cols-3 sm:gap-8 mb-12 sm:mb-16">
+{/* Gallery + Text Section */}
+<div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
   {/* Left: 2x2 Image Grid with angled/tilted effect */}
   <div className="lg:col-span-2">
-    <div className="grid grid-cols-2 sm:gap-4 relative">
+    <div className="grid grid-cols-2 gap-3 sm:gap-4 relative">
       {/* Rotated container for the whole grid */}
-      <div className="col-span-2 grid grid-cols-2 sm:gap-4 transform -rotate-1">
-       {/* Row 1 - Column 1 */}
-<div className="w-40 h-24 sm:h-32 md:h-40 transform rotate-2 overflow-hidden shadow-md">
-  <div className="w-40 h-24 sm:h-32 md:h-40"> {/* Adjusted here */}
-    <img 
-      src={require('../assets/team1.png')}
-      alt="CubeTech Team Collaboration"
-      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-    />
-  </div>
-</div>
-
-{/* Row 1 - Column 2 */}
-<div className="w-40 h-24 sm:h-32 md:h-40 transform -rotate-1 overflow-hidden shadow-md">
-  <div className="w-40 h-24 sm:h-32 md:h-40"> {/* Adjusted here */}
-    <img 
-      src={require('../assets/team2.png')}
-      alt="CubeTech Office Space"
-      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-    />
-  </div>
-</div>
-
-{/* Row 2 - Column 1 */}
-<div className="w-40 h-24 sm:h-32 md:h-40 transform -rotate-2 overflow-hidden shadow-md">
-  <div className="w-40 h-24 sm:h-32 md:h-40"> {/* Adjusted here */}
-    <img 
-      src={require('../assets/qr.jpg')}
-      alt="CubeTech Technology"
-      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-    />
-  </div>
-</div>
-
-{/* Row 2 - Column 2 */}
-<div className="w-40 h-24 sm:h-32 md:h-40 transform rotate-1 overflow-hidden shadow-md">
-  <div className="w-40 h-24 sm:h-32 md:h-40"> {/* Adjusted here */}
-    <img 
-      src={require('../assets/team1.png')}
-      alt="CubeTech Projects"
-      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-    />
-  </div>
-</div>
+      <div className="col-span-2 grid grid-cols-2 gap-3 sm:gap-4 transform -rotate-1">
+        {/* Row 1 - Column 1 */}
+        <div className="transform rotate-2 overflow-hidden rounded-lg shadow-md">
+          <div className="w-full h-40 sm:h-48 md:h-56"> {/* Increased size */}
+            <img 
+              src={require('../assets/team1.png')}
+              alt="CubeTech Team Collaboration"
+              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+        </div>
+        
+        {/* Row 1 - Column 2 */}
+        <div className="transform -rotate-1 overflow-hidden rounded-lg shadow-md">
+          <div className="w-full h-40 sm:h-48 md:h-56"> {/* Increased size */}
+            <img 
+              src={require('../assets/team2.png')}
+              alt="CubeTech Office Space"
+              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+        </div>
+        
+        {/* Row 2 - Column 1 */}
+        <div className="transform -rotate-2 overflow-hidden rounded-lg shadow-md">
+          <div className="w-full h-40 sm:h-48 md:h-56"> {/* Increased size */}
+            <img 
+              src={require('../assets/qr.jpg')}
+              alt="CubeTech Technology"
+              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+        </div>
+        
+        {/* Row 2 - Column 2 */}
+        <div className="transform rotate-1 overflow-hidden rounded-lg shadow-md">
+          <div className="w-full h-40 sm:h-48 md:h-56"> {/* Increased size */}
+            <img 
+              src={require('../assets/team1.png')}
+              alt="CubeTech Projects"
+              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </div>
   
-  {/* Right: Text Sidebar - Matching exact design from image */}
+  {/* Right: Text Sidebar */}
   <div className="bg-gray-100 p-5 sm:p-6 md:p-7 rounded-lg shadow-sm border border-gray-200">
     <div className="space-y-3 sm:space-y-4">
       <p className="text-gray-700 text-xs sm:text-sm md:text-base leading-relaxed">
