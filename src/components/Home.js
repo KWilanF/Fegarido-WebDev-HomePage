@@ -193,8 +193,8 @@ const Home = () => {
       {/* Rotated container for the whole grid */}
       <div className="col-span-2 grid grid-cols-2 gap-3 sm:gap-4 transform -rotate-1">
        {/* Row 1 - Column 1 */}
-<div className="transform rotate-2 overflow-hidden rounded-lg shadow-md">
-  <div className="w-full h-24 sm:h-32 md:h-40"> {/* Adjusted here */}
+<div className="transform rotate-2 overflow-hidden shadow-md">
+  <div className="w-40 h-24 sm:h-32 md:h-40"> {/* Adjusted here */}
     <img 
       src={require('../assets/team1.png')}
       alt="CubeTech Team Collaboration"
@@ -204,8 +204,8 @@ const Home = () => {
 </div>
 
 {/* Row 1 - Column 2 */}
-<div className="transform -rotate-1 overflow-hidden rounded-lg shadow-md">
-  <div className="w-full h-24 sm:h-32 md:h-40"> {/* Adjusted here */}
+<div className="transform -rotate-1 overflow-hidden shadow-md">
+  <div className="w-40 h-24 sm:h-32 md:h-40"> {/* Adjusted here */}
     <img 
       src={require('../assets/team2.png')}
       alt="CubeTech Office Space"
@@ -215,8 +215,8 @@ const Home = () => {
 </div>
 
 {/* Row 2 - Column 1 */}
-<div className="transform -rotate-2 overflow-hidden rounded-lg shadow-md">
-  <div className="w-full h-24 sm:h-32 md:h-40"> {/* Adjusted here */}
+<div className="transform -rotate-2 overflow-hidden shadow-md">
+  <div className="w-40 h-24 sm:h-32 md:h-40"> {/* Adjusted here */}
     <img 
       src={require('../assets/qr.jpg')}
       alt="CubeTech Technology"
@@ -226,8 +226,8 @@ const Home = () => {
 </div>
 
 {/* Row 2 - Column 2 */}
-<div className="transform rotate-1 overflow-hidden rounded-lg shadow-md">
-  <div className="w-full h-24 sm:h-32 md:h-40"> {/* Adjusted here */}
+<div className="transform rotate-1 overflow-hidden shadow-md">
+  <div className="w-40 h-24 sm:h-32 md:h-40"> {/* Adjusted here */}
     <img 
       src={require('../assets/team1.png')}
       alt="CubeTech Projects"
