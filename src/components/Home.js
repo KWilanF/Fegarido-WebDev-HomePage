@@ -185,16 +185,16 @@ const Home = () => {
       We're CubeTech
     </h2>
     
-   {/* Gallery + Text Section */}
+  {/* Gallery + Text Section */}
 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 mb-12 sm:mb-16">
   {/* Left: Gallery with 2x2 Grid - 4 smaller tilted images */}
-  <div className="flex justify-center lg:justify-start">
+  <div className="flex items-center justify-center lg:justify-start">
     <div className="relative">
       {/* Main container with slight rotation */}
       <div className="grid grid-cols-2 gap-3 sm:gap-4 transform -rotate-2">
         {/* Top Left - Rotated clockwise */}
         <div className="transform rotate-3 overflow-hidden rounded-lg shadow-md">
-          <div className="w-40 h-24 sm:w-44 sm:h-28">
+          <div className="w-36 h-22 sm:w-40 sm:h-28">
             <img 
               src={require('../assets/team1.png')}
               alt="CubeTech Team"
@@ -205,7 +205,7 @@ const Home = () => {
         
         {/* Top Right - Rotated counter-clockwise */}
         <div className="transform -rotate-2 overflow-hidden rounded-lg shadow-md">
-          <div className="w-40 h-24 sm:w-44 sm:h-28">
+          <div className="w-36 h-22 sm:w-40 sm:h-28">
             <img 
               src={require('../assets/team2.png')}
               alt="CubeTech Office"
@@ -216,7 +216,7 @@ const Home = () => {
         
         {/* Bottom Left - Rotated counter-clockwise */}
         <div className="transform -rotate-1 overflow-hidden rounded-lg shadow-md">
-          <div className="w-40 h-24 sm:w-44 sm:h-28">
+          <div className="w-36 h-22 sm:w-40 sm:h-28">
             <img 
               src={require('../assets/qr.jpg')}
               alt="CubeTech Technology"
@@ -227,7 +227,7 @@ const Home = () => {
         
         {/* Bottom Right - Rotated clockwise */}
         <div className="transform rotate-2 overflow-hidden rounded-lg shadow-md">
-          <div className="w-40 h-24 sm:w-44 sm:h-28">
+          <div className="w-36 h-22 sm:w-40 sm:h-28">
             <img 
               src={require('../assets/stat.jpg')}
               alt="CubeTech Statistics"
@@ -239,11 +239,9 @@ const Home = () => {
     </div>
   </div>
   
-  {/* Right: Text Content */}
+  {/* Right: Text Content - No heading */}
   <div className="flex flex-col justify-center">
     <div className="space-y-4 sm:space-y-6">
-      <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">About CubeTech</h3>
-      
       <p className="text-gray-700 leading-relaxed">
         At CubeTech, we pride ourselves on our collaborative culture, fostering an environment where creativity thrives and every voice matters.
       </p>
