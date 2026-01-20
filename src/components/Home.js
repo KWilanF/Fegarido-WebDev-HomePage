@@ -189,9 +189,9 @@ const Home = () => {
 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
   {/* Left: 2x2 Image Grid with angled/tilted effect */}
   <div className="lg:col-span-2">
-    <div className="grid grid-cols-2 gap-3 sm:gap-4 relative">
+    <div className="grid grid-cols-2 sm:gap-4 relative">
       {/* Rotated container for the whole grid */}
-      <div className="col-span-2 grid grid-cols-2 gap-3 sm:gap-4 transform -rotate-1">
+      <div className="col-span-2 grid grid-cols-2 sm:gap-4 transform -rotate-1">
        {/* Row 1 - Column 1 */}
 <div className="w-40 h-24 sm:h-32 md:h-40 transform rotate-2 overflow-hidden shadow-md">
   <div className="w-40 h-24 sm:h-32 md:h-40"> {/* Adjusted here */}
