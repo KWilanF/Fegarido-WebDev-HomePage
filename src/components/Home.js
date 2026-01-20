@@ -194,7 +194,7 @@ const Home = () => {
       <div className="grid grid-cols-2 gap-3 sm:gap-4 transform -rotate-2">
         {/* Top Left - Rotated clockwise */}
         <div className="transform rotate-3 overflow-hidden rounded-lg shadow-md">
-          <div className="w-36 h-22 sm:w-40 sm:h-28">
+          <div className="w-48 h-32 sm:w-40 sm:h-28">
             <img 
               src={require('../assets/team1.png')}
               alt="CubeTech Team"
@@ -205,7 +205,7 @@ const Home = () => {
         
         {/* Top Right - Rotated counter-clockwise */}
         <div className="transform -rotate-2 overflow-hidden rounded-lg shadow-md">
-          <div className="w-36 h-22 sm:w-40 sm:h-28">
+          <div className="w-48 h-32 sm:w-40 sm:h-28">
             <img 
               src={require('../assets/team2.png')}
               alt="CubeTech Office"
@@ -216,7 +216,7 @@ const Home = () => {
         
         {/* Bottom Left - Rotated counter-clockwise */}
         <div className="transform -rotate-1 overflow-hidden rounded-lg shadow-md">
-          <div className="w-36 h-22 sm:w-40 sm:h-28">
+          <div className="w-48 h-32 sm:w-40 sm:h-28">
             <img 
               src={require('../assets/qr.jpg')}
               alt="CubeTech Technology"
@@ -227,7 +227,7 @@ const Home = () => {
         
         {/* Bottom Right - Rotated clockwise */}
         <div className="transform rotate-2 overflow-hidden rounded-lg shadow-md">
-          <div className="w-36 h-22 sm:w-40 sm:h-28">
+          <div className="w-48 h-32 sm:w-40 sm:h-28">
             <img 
               src={require('../assets/stat.jpg')}
               alt="CubeTech Statistics"
