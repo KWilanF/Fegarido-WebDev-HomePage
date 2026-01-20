@@ -355,9 +355,9 @@ const Home = () => {
         {/* Carousel Dots Indicator */}
         <div className="flex justify-center mt-6 sm:mt-8 space-x-2">
           <button className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-blue-600"></button>
-          <button className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-gray-300 hover:bg-gray-400"></button>
-          <button className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-gray-300 hover:bg-gray-400"></button>
-          <button className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-gray-300 hover:bg-gray-400"></button>
+          <button className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-white hover:bg-gray-400"></button>
+          <button className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-white hover:bg-gray-400"></button>
+          <button className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-white hover:bg-gray-400"></button>
         </div>
       </div>
     </div>
