@@ -189,7 +189,7 @@ const Home = () => {
       <div className="lg:col-span-2">
         <div className="grid grid-cols-2 gap-4 sm:gap-6">
           {/* Row 1 - Column 1 */}
-          <div className="aspect-square rounded-lg overflow-hidden shadow-md">
+          <div className="w-40 h-40 aspect-square rounded-lg overflow-hidden shadow-md">
             <img 
               src={require('../assets/team1.png')}
               alt="CubeTech Team Collaboration"
@@ -198,7 +198,7 @@ const Home = () => {
           </div>
           
           {/* Row 1 - Column 2 */}
-          <div className="aspect-square rounded-lg overflow-hidden shadow-md">
+          <div className="w-40 h-40 aspect-square rounded-lg overflow-hidden shadow-md">
             <img 
               src={require('../assets/team2.png')}
               alt="CubeTech Office Space"
@@ -207,7 +207,7 @@ const Home = () => {
           </div>
           
           {/* Row 2 - Column 1 */}
-          <div className="aspect-square rounded-lg overflow-hidden shadow-md">
+          <div className="w-40 h-40 aspect-square rounded-lg overflow-hidden shadow-md">
             <img 
               src={require('../assets/qr.jpg')}
               alt="CubeTech Technology"
@@ -216,7 +216,7 @@ const Home = () => {
           </div>
           
           {/* Row 2 - Column 2 */}
-          <div className="aspect-square rounded-lg overflow-hidden shadow-md">
+          <div className="w-40 h-40 aspect-square rounded-lg overflow-hidden shadow-md">
             <img 
               src={require('../assets/team1.png')}
               alt="CubeTech Projects"
