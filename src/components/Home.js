@@ -177,7 +177,7 @@ const Home = () => {
 </section>
 
 {/* Section 3: About CubeTech & Team */}
-<section className="bg-gray-300 py-12 sm:py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+<section className="bg-gray-50 py-12 sm:py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
   <div className="mb-12 sm:mb-16">
     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-600 text-center mb-8 sm:mb-10">
       We're CubeTech
@@ -226,7 +226,7 @@ const Home = () => {
         </div>
       </div>
       
-      {/* Right: Text Sidebar with Your Context */}
+      {/* Right: Text Sidebar */}
       <div className="bg-transparent p-6 sm:p-8 rounded-xl shadow-md border border-gray-100">
         <div className="space-y-4 sm:space-y-5">
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
@@ -254,13 +254,13 @@ const Home = () => {
     
     {/* Mission & Vision Boxes */}
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
-      <div className="bg-gray-200 p-6 sm:p-8 rounded-xl shadow-sm border border-gray-100">
+      <div className="bg-white p-6 sm:p-8 rounded-xl shadow-sm border border-gray-100">
         <h3 className="text-xl sm:text-2xl font-bold text-blue-600 mb-3 sm:mb-4">Our Mission</h3>
         <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
           Empower businesses every day by providing innovative software solutions that drive growth and unlock their full potential.
         </p>
       </div>
-      <div className="bg-gray-200 p-6 sm:p-8 rounded-xl shadow-sm border border-gray-100">
+      <div className="bg-white p-6 sm:p-8 rounded-xl shadow-sm border border-gray-100">
         <h3 className="text-xl sm:text-2xl font-bold text-blue-600 mb-3 sm:mb-4">Our Vision</h3>
         <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
           CubeTech delivers innovative, secure, and user-friendly software tailored to client needs. We focus on transparency, efficiency, and long-term partnerships, empowering growth with reliable solutions that boost productivity.
@@ -268,72 +268,96 @@ const Home = () => {
       </div>
     </div>
     
-    {/* Team Section */}
+    {/* Team Section with Carousel */}
     <div className="px-4 sm:px-6 lg:px-8">
       <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-8 sm:mb-12">
         Our Team
       </h3>
       
-      {/* Team Grid - Always 2 per row on mobile, 4 on desktop */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
-        {/* Team Member 1 */}
-        <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
-          <div className="w-full h-48 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-            <img 
-              src={require('../assets/team1.png')} 
-              alt="Sadik Rahman" 
-              className="w-full h-full object-cover"
-            />
+      {/* Carousel Container */}
+      <div className="relative">
+        {/* Carousel Navigation Arrows */}
+        <button className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-6 z-10 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <svg className="w-5 h-5 md:w-6 md:h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        
+        <button className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-6 z-10 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <svg className="w-5 h-5 md:w-6 md:h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+        
+        {/* Team Carousel - Always 2 per row on mobile, 4 on desktop */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 overflow-hidden">
+          {/* Team Member 1 */}
+          <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
+            <div className="w-full h-48 sm:h-52 md:h-64 lg:h-72 xl:h-80">
+              <img 
+                src={require('../assets/team1.png')} 
+                alt="Sadiq Rahman" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4 sm:p-5">
+              <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Sadiq Rahman</h4>
+              <p className="text-blue-600 font-semibold text-xs sm:text-sm">DIRECTOR</p>
+            </div>
           </div>
-          <div className="p-4 sm:p-5">
-            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Sadik Rahman</h4>
-            <p className="text-blue-600 font-semibold text-xs sm:text-sm">DIRECTOR</p>
+          
+          {/* Team Member 2 */}
+          <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
+            <div className="w-full h-48 sm:h-52 md:h-64 lg:h-72 xl:h-80">
+              <img 
+                src={require('../assets/team2.png')} 
+                alt="Cherry White" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4 sm:p-5">
+              <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Cherry White</h4>
+              <p className="text-blue-600 font-semibold text-xs sm:text-sm">SALES AND MARKETING</p>
+            </div>
+          </div>
+          
+          {/* Team Member 3 */}
+          <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
+            <div className="w-full h-48 sm:h-52 md:h-64 lg:h-72 xl:h-80">
+              <img 
+                src={require('../assets/team2.png')} 
+                alt="Angeline Yap" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4 sm:p-5">
+              <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Angeline Yap</h4>
+              <p className="text-blue-600 font-semibold text-xs sm:text-sm">FINANCE MANAGER</p>
+            </div>
+          </div>
+          
+          {/* Team Member 4 */}
+          <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
+            <div className="w-full h-48 sm:h-52 md:h-64 lg:h-72 xl:h-80">
+              <img 
+                src={require('../assets/team1.png')} 
+                alt="Derver Son" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4 sm:p-5">
+              <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Derver Son</h4>
+              <p className="text-blue-600 font-semibold text-xs sm:text-sm">FULL-STACK DEVELOPER</p>
+            </div>
           </div>
         </div>
         
-        {/* Team Member 2 */}
-        <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
-          <div className="w-full h-48 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-            <img 
-              src={require('../assets/team2.png')} 
-              alt="Cherry White" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="p-4 sm:p-5">
-            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Cherry White</h4>
-            <p className="text-blue-600 font-semibold text-xs sm:text-sm">SALES AND MARKETING</p>
-          </div>
-        </div>
-        
-        {/* Team Member 3 */}
-        <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
-          <div className="w-full h-48 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-            <img 
-              src={require('../assets/team2.png')} 
-              alt="Angeline Yap" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="p-4 sm:p-5">
-            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Angeline Yap</h4>
-            <p className="text-blue-600 font-semibold text-xs sm:text-sm">FINANCE MANAGER</p>
-          </div>
-        </div>
-        
-        {/* Team Member 4 */}
-        <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
-          <div className="w-full h-48 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-            <img 
-              src={require('../assets/team1.png')} 
-              alt="Denver Son" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="p-4 sm:p-5">
-            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Denver Son</h4>
-            <p className="text-blue-600 font-semibold text-xs sm:text-sm">FULL-STACK DEVELOPER</p>
-          </div>
+        {/* Carousel Dots Indicator */}
+        <div className="flex justify-center mt-6 sm:mt-8 space-x-2">
+          <button className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-blue-600"></button>
+          <button className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-gray-300 hover:bg-gray-400"></button>
+          <button className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-gray-300 hover:bg-gray-400"></button>
+          <button className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-gray-300 hover:bg-gray-400"></button>
         </div>
       </div>
     </div>
