@@ -186,7 +186,7 @@ const Home = () => {
     </h2>
     
    {/* Gallery + Text Section */}
-<div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
+<div className="grid grid-cols-1 lg:grid-cols-3 sm:gap-8 mb-12 sm:mb-16">
   {/* Left: 2x2 Image Grid with angled/tilted effect */}
   <div className="lg:col-span-2">
     <div className="grid grid-cols-2 sm:gap-4 relative">
