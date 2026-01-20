@@ -227,7 +227,7 @@ const Home = () => {
       </div>
       
       {/* Right: Text Sidebar */}
-      <div className="bg-transparent p-6 sm:p-8 rounded-xl shadow-md border border-gray-100">
+      <div className="bg-transparent p-6 sm:p-8 rounded-xl shadow-md border border-gray-300">
         <div className="space-y-4 sm:space-y-5">
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
             We're a passionate and innovative team based in Cebu, Philippines, dedicated to delivering exceptional products that our customers love and rely on.
