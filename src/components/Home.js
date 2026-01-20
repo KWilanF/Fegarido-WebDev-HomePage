@@ -179,7 +179,7 @@ const Home = () => {
       {/* Section 3: About CubeTech & Team */}
 <section className="bg-gray-300 py-12 sm:py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
   <div className="mb-12 sm:mb-16">
-    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-8 sm:mb-10">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-600 text-center mb-8 sm:mb-10">
       We're CubeTech
     </h2>
     
@@ -227,7 +227,7 @@ const Home = () => {
       </div>
       
       {/* Right: Text Sidebar with Your Context */}
-      <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md border border-gray-100">
+      <div className="bg-transparent p-6 sm:p-8 rounded-xl shadow-md border border-gray-100">
         <div className="space-y-4 sm:space-y-5">
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
             We're a passionate and innovative team based in Cebu, Philippines, dedicated to delivering exceptional products that our customers love and rely on.
@@ -480,9 +480,9 @@ const Home = () => {
               
               <button 
                 type="submit" 
-                className="bg-gradient-to-b from-sky-500 to-blue-500 hover:from-sky-600 hover:via-blue-600 hover:to-indigo-600 text-white font-semibold px-6 py-3 rounded-lg 
+                className="bg-gradient-to-b from-sky-500 to-blue-500 hover:from-sky-600 hover:via-blue-600 hover:to-indigo-600 text-white font-semibold px-3 py-3 rounded-lg 
   transition-all duration-500 ease-out text-base shadow-lg hover:shadow-2xl
-  w-full sm:w-auto hover:-translate-y-1
+  w-50 sm:w-auto ml-28 hover:-translate-y-1
   transform"
               >
                 Send Message
