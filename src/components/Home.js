@@ -254,13 +254,13 @@ const Home = () => {
     
     {/* Mission & Vision Boxes */}
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
-      <div className="bg-white p-6 sm:p-8 rounded-xl shadow-sm border border-gray-100">
+      <div className="bg-transparent p-6 sm:p-8 rounded-xl shadow-sm border border-gray-100">
         <h3 className="text-xl sm:text-2xl font-bold text-blue-600 mb-3 sm:mb-4">Our Mission</h3>
         <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
           Empower businesses every day by providing innovative software solutions that drive growth and unlock their full potential.
         </p>
       </div>
-      <div className="bg-white p-6 sm:p-8 rounded-xl shadow-sm border border-gray-100">
+      <div className="bg-transparent p-6 sm:p-8 rounded-xl shadow-sm border border-gray-100">
         <h3 className="text-xl sm:text-2xl font-bold text-blue-600 mb-3 sm:mb-4">Our Vision</h3>
         <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
           CubeTech delivers innovative, secure, and user-friendly software tailored to client needs. We focus on transparency, efficiency, and long-term partnerships, empowering growth with reliable solutions that boost productivity.
