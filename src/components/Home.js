@@ -196,7 +196,7 @@ const Home = () => {
         <div className="transform rotate-3 overflow-hidden rounded-lg shadow-md">
           <div className="w-48 h-32 sm:w-56 sm:h-36 md:w-64 md:h-40">
             <img 
-              src={require('../assets/stat.jpg')}
+              src={require('../assets/images.jpeg')}
               alt="CubeTech Team"
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
             />
@@ -207,7 +207,7 @@ const Home = () => {
         <div className="transform -rotate-2 overflow-hidden rounded-lg shadow-md">
           <div className="w-48 h-32 sm:w-56 sm:h-36 md:w-64 md:h-40">
             <img 
-              src={require('../assets/qr.jpg')}
+              src={require('../assets/images.jpeg')}
               alt="CubeTech Office"
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
             />
@@ -218,7 +218,7 @@ const Home = () => {
         <div className="transform -rotate-1 overflow-hidden rounded-lg shadow-md">
           <div className="w-48 h-32 sm:w-56 sm:h-36 md:w-64 md:h-40">
             <img 
-              src={require('../assets/qr.jpg')}
+              src={require('../assets/images.jpeg')}
               alt="CubeTech Technology"
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
             />
@@ -229,7 +229,7 @@ const Home = () => {
         <div className="transform rotate-2 overflow-hidden rounded-lg shadow-md">
           <div className="w-48 h-32 sm:w-56 sm:h-36 md:w-64 md:h-40">
             <img 
-              src={require('../assets/stat.jpg')}
+              src={require('../assets/images.jpeg')}
               alt="CubeTech Statistics"
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
             />
@@ -348,7 +348,7 @@ const Home = () => {
       <section className="py-12 sm:py-16 md:py-24 bg-gray-50 rounded-3xl my-8 sm:my-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-600 mb-4 sm:mb-6">
               Experience it firsthand and discover true value
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
@@ -356,83 +356,80 @@ const Home = () => {
             </p>
           </div>
           
-          {/* Testimonials Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-20">
+        {/* Testimonials Grid */}
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-20">
   {/* Testimonial 1 - Anne Curtis */}
-  <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md">
-    <div className="flex items-start gap-4 mb-6 sm:mb-8">
-      {/* Profile Image */}
-      <div className="flex-shrink-0">
-        <img 
-          src={require('../assets/team1.png')}
-          alt="Anne Curtis" 
-          className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-2 border-gray-100"
-        />
-      </div>
-      {/* Quote */}
-      <div>
-        <p className="text-gray-600 italic leading-relaxed text-sm sm:text-base">
-          "Don't walk behind me; I may not lead. Don't walk in front of me; I may not follow. Just walk beside me and be my friend."
-        </p>
-      </div>
+  <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md flex flex-col items-center text-center">
+    {/* Profile Image - Centered */}
+    <div className="mb-4 sm:mb-6">
+      <img 
+        src={require('../assets/team1.png')}
+        alt="Anne Curtis" 
+        className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover border-4 border-gray-100 mx-auto"
+      />
     </div>
-    <div className="flex items-center gap-3">
-      <div>
-        <h4 className="font-bold text-gray-900 text-base sm:text-lg">Anne Curtis</h4>
-        <p className="text-gray-500 text-sm sm:text-base">CEO @ WASHO WASHO LTD.</p>
-      </div>
+    
+    {/* Name and Position */}
+    <div className="mb-4 sm:mb-6">
+      <h4 className="font-bold text-gray-900 text-lg sm:text-xl">Anne Curtis</h4>
+      <p className="text-gray-500 text-sm sm:text-base">CEO @ WASHO WASHO LTD.</p>
+    </div>
+    
+    {/* Quote - Context */}
+    <div className="flex-grow">
+      <p className="text-gray-600 italic leading-relaxed text-sm sm:text-base">
+        "Don't walk behind me; I may not lead. Don't walk in front of me; I may not follow. Just walk beside me and be my friend."
+      </p>
     </div>
   </div>
   
   {/* Testimonial 2 - Kim Sam Son */}
-  <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md">
-    <div className="flex items-start gap-4 mb-6 sm:mb-8">
-      {/* Profile Image */}
-      <div className="flex-shrink-0">
-        <img 
-          src={require('../assets/team2.png')}
-          alt="Kim Sam Son" 
-          className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-2 border-gray-100"
-        />
-      </div>
-      {/* Quote */}
-      <div>
-        <p className="text-gray-600 italic leading-relaxed text-sm sm:text-base">
-          "The pessimist complains about the wind; the optimist expects it to change; the realist adjusts the sails."
-        </p>
-      </div>
+  <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md flex flex-col items-center text-center">
+    {/* Profile Image - Centered */}
+    <div className="mb-4 sm:mb-6">
+      <img 
+        src={require('../assets/team2.png')}
+        alt="Kim Sam Son" 
+        className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover border-4 border-gray-100 mx-auto"
+      />
     </div>
-    <div className="flex items-center gap-3">
-      <div>
-        <h4 className="font-bold text-gray-900 text-base sm:text-lg">Kim Sam Son</h4>
-        <p className="text-gray-500 text-sm sm:text-base">MARKETING @ WADIRI WADIDITO INC.</p>
-      </div>
+    
+    {/* Name and Position */}
+    <div className="mb-4 sm:mb-6">
+      <h4 className="font-bold text-gray-900 text-lg sm:text-xl">Kim Sam Son</h4>
+      <p className="text-gray-500 text-sm sm:text-base">MARKETING @ WADIRI WADIDITO INC.</p>
+    </div>
+    
+    {/* Quote - Context */}
+    <div className="flex-grow">
+      <p className="text-gray-600 italic leading-relaxed text-sm sm:text-base">
+        "The pessimist complains about the wind; the optimist expects it to change; the realist adjusts the sails."
+      </p>
     </div>
   </div>
   
   {/* Testimonial 3 - Kim Soo-Hyun */}
-  <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md">
-    <div className="flex items-start gap-4 mb-6 sm:mb-8">
-      {/* Profile Image */}
-      <div className="flex-shrink-0">
-        <img 
-          src={require('../assets/qr.jpg')}
-          alt="Kim Soo-Hyun" 
-          className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-2 border-gray-100"
-        />
-      </div>
-      {/* Quote */}
-      <div>
-        <p className="text-gray-600 italic leading-relaxed text-sm sm:text-base">
-          "공이 당신을 바라보고, 공이 없는 곳은 모든 가치를 넘겨주다."
-        </p>
-      </div>
+  <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md flex flex-col items-center text-center">
+    {/* Profile Image - Centered */}
+    <div className="mb-4 sm:mb-6">
+      <img 
+        src={require('../assets/qr.jpg')}
+        alt="Kim Soo-Hyun" 
+        className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover border-4 border-gray-100 mx-auto"
+      />
     </div>
-    <div className="flex items-center gap-3">
-      <div>
-        <h4 className="font-bold text-gray-900 text-base sm:text-lg">Kim Soo-Hyun</h4>
-        <p className="text-gray-500 text-sm sm:text-base">CFO @ WADIRI WADIDITO INC.</p>
-      </div>
+    
+    {/* Name and Position */}
+    <div className="mb-4 sm:mb-6">
+      <h4 className="font-bold text-gray-900 text-lg sm:text-xl">Kim Soo-Hyun</h4>
+      <p className="text-gray-500 text-sm sm:text-base">CFO @ WADIRI WADIDITO INC.</p>
+    </div>
+    
+    {/* Quote - Context */}
+    <div className="flex-grow">
+      <p className="text-gray-600 italic leading-relaxed text-sm sm:text-base">
+        "공이 당신을 바라보고, 공이 없는 곳은 모든 가치를 넘겨주다."
+      </p>
     </div>
   </div>
 </div>
