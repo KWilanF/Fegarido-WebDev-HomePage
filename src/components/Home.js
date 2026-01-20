@@ -277,75 +277,70 @@ const Home = () => {
       </div>
     </div>
     
-    {/* Team Section - Fixed Grid (No Carousel) */}
-    <div className="px-4 sm:px-6 lg:px-8">
-      <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-8 sm:mb-12">
-        Our Team
-      </h3>
-      
-      {/* Team Grid - Static display matching the image */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-        {/* Team Member 1 */}
-        <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-200">
-          <div className="w-full h-48 sm:h-56">
-            <img 
-              src={require('../assets/team1.png')} 
-              alt="Jacky Ratan" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="p-4">
-            <h4 className="text-lg font-bold text-gray-900 mb-1">Jacky Ratan</h4>
-            <p className="text-blue-600 font-medium text-sm">President</p>
-          </div>
-        </div>
-        
-        {/* Team Member 2 */}
-        <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-200">
-          <div className="w-full h-48 sm:h-56">
-            <img 
-              src={require('../assets/team2.png')} 
-              alt="Cherry White" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="p-4">
-            <h4 className="text-lg font-bold text-gray-900 mb-1">Cherry White</h4>
-            <p className="text-blue-600 font-medium text-sm">Sales Manager</p>
-          </div>
-        </div>
-        
-        {/* Team Member 3 */}
-        <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-200">
-          <div className="w-full h-48 sm:h-56">
-            <img 
-              src={require('../assets/team1.png')} 
-              alt="Jaegie Vip" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="p-4">
-            <h4 className="text-lg font-bold text-gray-900 mb-1">Jaegie Vip</h4>
-            <p className="text-blue-600 font-medium text-sm">Project Manager</p>
-          </div>
-        </div>
-        
-        {/* Team Member 4 */}
-        <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-200">
-          <div className="w-full h-48 sm:h-56">
-            <img 
-              src={require('../assets/team2.png')} 
-              alt="Dewan Sia" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="p-4">
-            <h4 className="text-lg font-bold text-gray-900 mb-1">Dewan Sia</h4>
-            <p className="text-blue-600 font-medium text-sm">Full Stack Developer</p>
-          </div>
-        </div>
+  {/* Team Section */}
+<div className="px-4 sm:px-6 lg:px-8">
+  <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+    {/* Team Member 1 */}
+    <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-200">
+      <div className="w-full h-40 sm:h-48 md:h-56">
+        <img 
+          src={require('../assets/team1.png')} 
+          alt="Sadik" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="p-3 sm:p-4">
+        <h4 className="text-base sm:text-lg font-bold text-gray-900 mb-1">Sadik Rahman</h4>
+        <p className="text-blue-600 font-medium text-xs sm:text-sm">Director</p>
       </div>
     </div>
+    
+    {/* Team Member 2 */}
+    <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-200">
+      <div className="w-full h-40 sm:h-48 md:h-56">
+        <img 
+          src={require('../assets/team2.png')} 
+          alt="Cherry" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="p-3 sm:p-4">
+        <h4 className="text-base sm:text-lg font-bold text-gray-900 mb-1">Cherry White</h4>
+        <p className="text-blue-600 font-medium text-xs sm:text-sm">Sales and Marketing</p>
+      </div>
+    </div>
+    
+    {/* Team Member 3 */}
+    <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-200">
+      <div className="w-full h-40 sm:h-48 md:h-56">
+        <img 
+          src={require('../assets/team2.png')} 
+          alt="Angeline" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="p-3 sm:p-4">
+        <h4 className="text-base sm:text-lg font-bold text-gray-900 mb-1">Angeline Yap</h4>
+        <p className="text-blue-600 font-medium text-xs sm:text-sm">Finance Manager</p>
+      </div>
+    </div>
+    
+    {/* Team Member 4 */}
+    <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-200">
+      <div className="w-full h-40 sm:h-48 md:h-56">
+        <img 
+          src={require('../assets/team1.png')} 
+          alt="Denver" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="p-3 sm:p-4">
+        <h4 className="text-base sm:text-lg font-bold text-gray-900 mb-1">Denver Son</h4>
+        <p className="text-blue-600 font-medium text-xs sm:text-sm">Full Stack Developer</p>
+      </div>
+    </div>
+  </div>
+</div>
   </div>
 </section>
 
