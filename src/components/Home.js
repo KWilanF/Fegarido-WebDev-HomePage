@@ -179,198 +179,152 @@ const Home = () => {
 
 
 {/* Section 3: About CubeTech & Team */}
-<section className="bg-gray-300 py-12 sm:py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+<section className="bg-white py-12 sm:py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
   <div className="mb-12 sm:mb-16">
     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-600 text-center mb-8 sm:mb-10">
       We're CubeTech
     </h2>
     
-{/* Gallery + Text Section */}
-<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-16">
-  {/* Left: 2x2 Image Grid with angled/tilted effect */}
-  <div className="lg:col-span-2 flex justify-center lg:justify-start">
-    <div className="relative">
-      {/* Rotated container for the whole grid */}
-      <div className="grid grid-cols-2 gap-1 sm:gap-2 transform -rotate-1">
-        {/* Row 1 - Column 1 */}
-        <div className="transform rotate-2 overflow-hidden rounded-lg shadow-md">
-          <div className="w-40 h-24 sm:w-36 sm:h-22"> {/* Slightly smaller */}
+    {/* Gallery + Text Section */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 mb-12 sm:mb-16">
+      {/* Left: Gallery with 2x2 Grid */}
+      <div className="space-y-4">
+        <div className="grid grid-cols-2 gap-4">
+          {/* Top Left - Square Image */}
+          <div className="overflow-hidden rounded-lg shadow-md">
             <img 
               src={require('../assets/team1.png')}
-              alt="CubeTech Team Collaboration"
-              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+              alt="CubeTech Team"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
-        </div>
-        
-        {/* Row 1 - Column 2 */}
-        <div className="transform -rotate-1 overflow-hidden rounded-lg shadow-md">
-          <div className="w-40 h-24 sm:w-36 sm:h-22"> {/* Slightly smaller */}
+          
+          {/* Top Right - Taller Image */}
+          <div className="overflow-hidden rounded-lg shadow-md row-span-2">
             <img 
               src={require('../assets/team2.png')}
-              alt="CubeTech Office Space"
-              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+              alt="CubeTech Office"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
-        </div>
-        
-        {/* Row 2 - Column 1 */}
-        <div className="transform -rotate-2 overflow-hidden rounded-lg shadow-md">
-          <div className="w-40 h-24 sm:w-36 sm:h-22"> {/* Slightly smaller */}
+          
+          {/* Bottom Left - Square Image */}
+          <div className="overflow-hidden rounded-lg shadow-md">
             <img 
               src={require('../assets/qr.jpg')}
               alt="CubeTech Technology"
-              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-            />
-          </div>
-        </div>
-        
-        {/* Row 2 - Column 2 */}
-        <div className="transform rotate-1 overflow-hidden rounded-lg shadow-md">
-          <div className="w-40 h-24 sm:w-36 sm:h-22"> {/* Slightly smaller */}
-            <img 
-              src={require('../assets/team1.png')}
-              alt="CubeTech Projects"
-              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
         </div>
       </div>
+      
+      {/* Right: Text Content */}
+      <div className="flex flex-col justify-center">
+        <div className="space-y-4 sm:space-y-6">
+          <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">About CubeTech</h3>
+          
+          <p className="text-gray-700 leading-relaxed">
+            At CubeTech, we pride ourselves on our collaborative culture, fostering an environment where creativity thrives and every voice matters.
+          </p>
+          
+          <p className="text-gray-700 leading-relaxed">
+            We're a passionate and innovative team based in Cebu, Philippines, dedicated to delivering exceptional products that our customers love and rely on.
+          </p>
+          
+          <p className="text-gray-700 leading-relaxed">
+            Together, we strive for excellence in everything we do, ensuring that we exceed expectations and make a positive impact in our community.
+          </p>
+          
+          <p className="text-gray-700 leading-relaxed">
+            CubeTech is all about crafting software solutions that meet client needs and drive growth. We're focused on building secure, user-friendly tools that add value—no hidden costs, just straightforward solutions.
+          </p>
+        </div>
+      </div>
     </div>
-  </div>
-  
-  {/* Right: Rectangular Text Sidebar */}
-  <div className="bg-gray-100 p-5 sm:p-6 rounded-lg shadow-sm border border-gray-200 flex items-center">
-    <div className="space-y-3 sm:space-y-4">
-      <p className="text-gray-700 text-sm leading-relaxed">
-        We're a passionate and innovative team based in Cebu, Philippines, dedicated to delivering exceptional products that our customers love and rely on.
-      </p>
-      
-      <p className="text-gray-700 text-sm leading-relaxed">
-        At CubeTech, we pride ourselves on our collaborative culture, fostering an environment where creativity thrives and every voice matters.
-      </p>
-      
-      <p className="text-gray-700 text-sm leading-relaxed">
-        Together, we strive for excellence in everything we do, ensuring that we exceed expectations and make a positive impact in our community.
-      </p>
-      
-      <p className="text-gray-700 text-sm leading-relaxed">
-        CubeTech is all about crafting software solutions that meet client needs and drive growth. We're focused on building secure, user-friendly tools that add value—no hidden costs, just straightforward solutions.
-      </p>
-      
-      <p className="text-gray-700 text-sm leading-relaxed">
-        By enhancing productivity, we aim to be a reliable partner our clients can count on for the long haul.
-      </p>
-    </div>
-  </div>
-</div>
     
     {/* Mission & Vision Boxes */}
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
-      <div className="bg-transparent p-6 sm:p-8 rounded-xl shadow-sm border border-gray-300">
-        <h3 className="text-xl sm:text-2xl font-bold text-blue-600 mb-3 sm:mb-4">Our Mission</h3>
+      <div className="bg-gray-50 p-6 sm:p-8 rounded-xl border-l-4 border-blue-600">
+        <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Our Mission</h3>
         <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
-          Empower businesses every day by providing innovative software solutions that drive growth and unlock their full potential.
+          Empower businesses every day by providing actionable software solutions that drive growth and unlock their full potential.
         </p>
       </div>
-      <div className="bg-transparent p-6 sm:p-8 rounded-xl shadow-sm border border-gray-300">
-        <h3 className="text-xl sm:text-2xl font-bold text-blue-600 mb-3 sm:mb-4">Our Vision</h3>
+      <div className="bg-gray-50 p-6 sm:p-8 rounded-xl border-l-4 border-blue-600">
+        <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Our Vision</h3>
         <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
-          CubeTech delivers innovative, secure, and user-friendly software tailored to client needs. We focus on transparency, efficiency, and long-term partnerships, empowering growth with reliable solutions that boost productivity.
+          CubeTech delivers innovative, secure, and user-friendly software tailored to client needs. We focus on empowering individuals, small business owners, and enterprise organizations with reliable solutions that boost productivity.
         </p>
       </div>
     </div>
     
-    {/* Team Section with Carousel */}
+    {/* Team Section - Fixed Grid (No Carousel) */}
     <div className="px-4 sm:px-6 lg:px-8">
       <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-8 sm:mb-12">
         Our Team
       </h3>
       
-      {/* Carousel Container */}
-      <div className="relative">
-        {/* Carousel Navigation Arrows */}
-        <button className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-6 z-10 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <svg className="w-5 h-5 md:w-6 md:h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-        
-        <button className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-6 z-10 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <svg className="w-5 h-5 md:w-6 md:h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
-        
-        {/* Team Carousel - Always 2 per row on mobile, 4 on desktop */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 overflow-hidden">
-          {/* Team Member 1 */}
-          <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
-            <div className="w-full h-48 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-              <img 
-                src={require('../assets/team1.png')} 
-                alt="Sadiq Rahman" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="p-4 sm:p-5">
-              <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Sadiq Rahman</h4>
-              <p className="text-blue-600 font-semibold text-xs sm:text-sm">DIRECTOR</p>
-            </div>
+      {/* Team Grid - Static display matching the image */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        {/* Team Member 1 */}
+        <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-200">
+          <div className="w-full h-48 sm:h-56">
+            <img 
+              src={require('../assets/team1.png')} 
+              alt="Jacky Ratan" 
+              className="w-full h-full object-cover"
+            />
           </div>
-          
-          {/* Team Member 2 */}
-          <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
-            <div className="w-full h-48 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-              <img 
-                src={require('../assets/team2.png')} 
-                alt="Cherry White" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="p-4 sm:p-5">
-              <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Cherry White</h4>
-              <p className="text-blue-600 font-semibold text-xs sm:text-sm">SALES AND MARKETING</p>
-            </div>
-          </div>
-          
-          {/* Team Member 3 */}
-          <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
-            <div className="w-full h-48 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-              <img 
-                src={require('../assets/team2.png')} 
-                alt="Angeline Yap" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="p-4 sm:p-5">
-              <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Angeline Yap</h4>
-              <p className="text-blue-600 font-semibold text-xs sm:text-sm">FINANCE MANAGER</p>
-            </div>
-          </div>
-          
-          {/* Team Member 4 */}
-          <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200">
-            <div className="w-full h-48 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-              <img 
-                src={require('../assets/team1.png')} 
-                alt="Derver Son" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="p-4 sm:p-5">
-              <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Derver Son</h4>
-              <p className="text-blue-600 font-semibold text-xs sm:text-sm">FULL-STACK DEVELOPER</p>
-            </div>
+          <div className="p-4">
+            <h4 className="text-lg font-bold text-gray-900 mb-1">Jacky Ratan</h4>
+            <p className="text-blue-600 font-medium text-sm">President</p>
           </div>
         </div>
         
-        {/* Carousel Dots Indicator */}
-        <div className="flex justify-center mt-6 sm:mt-8 space-x-2">
-          <button className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-blue-600"></button>
-          <button className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-white hover:bg-gray-400"></button>
-          <button className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-white hover:bg-gray-400"></button>
-          <button className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-white hover:bg-gray-400"></button>
+        {/* Team Member 2 */}
+        <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-200">
+          <div className="w-full h-48 sm:h-56">
+            <img 
+              src={require('../assets/team2.png')} 
+              alt="Cherry White" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="p-4">
+            <h4 className="text-lg font-bold text-gray-900 mb-1">Cherry White</h4>
+            <p className="text-blue-600 font-medium text-sm">Sales Manager</p>
+          </div>
+        </div>
+        
+        {/* Team Member 3 */}
+        <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-200">
+          <div className="w-full h-48 sm:h-56">
+            <img 
+              src={require('../assets/team1.png')} 
+              alt="Jaegie Vip" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="p-4">
+            <h4 className="text-lg font-bold text-gray-900 mb-1">Jaegie Vip</h4>
+            <p className="text-blue-600 font-medium text-sm">Project Manager</p>
+          </div>
+        </div>
+        
+        {/* Team Member 4 */}
+        <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-200">
+          <div className="w-full h-48 sm:h-56">
+            <img 
+              src={require('../assets/team2.png')} 
+              alt="Dewan Sia" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="p-4">
+            <h4 className="text-lg font-bold text-gray-900 mb-1">Dewan Sia</h4>
+            <p className="text-blue-600 font-medium text-sm">Full Stack Developer</p>
+          </div>
         </div>
       </div>
     </div>
