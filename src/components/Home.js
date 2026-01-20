@@ -204,7 +204,7 @@ const Home = () => {
         </div>
         
         {/* Row 1 - Column 2 */}
-        <div className="w-40 transform -rotate-1 overflow-hidden shadow-md">
+        <div className="w-40 -ml-30 transform -rotate-1 overflow-hidden shadow-md">
           <div className="w-40 h-24"> {/* Fixed width 40, height 24 */}
             <img 
               src={require('../assets/team2.png')}
@@ -226,7 +226,7 @@ const Home = () => {
         </div>
         
         {/* Row 2 - Column 2 */}
-        <div className="w-40 transform rotate-1 overflow-hidden shadow-md">
+        <div className="w-40 -ml-30 transform rotate-1 overflow-hidden shadow-md">
           <div className="w-40 h-24"> {/* Fixed width 40, height 24 */}
             <img 
               src={require('../assets/team1.png')}
